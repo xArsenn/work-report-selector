@@ -65,7 +65,7 @@ Improve:
 - Connect outcomes to business value without unsupported monetary conversion.
 - End with a concrete next action when one exists.
 - Remove repetition, generic self-praise, and empty phrases.
-- Remove unsupported decorative adverbials and modifiers. Prefer “完成27笔单据审核” over “高效完成27笔单据审核”, and “整理平台做账资料” over “有序整理平台全部做账资料”. Retain words such as “再次”“部分”“目前”“预计” when they accurately express sequence, scope, status, or uncertainty.
+- Remove unsupported decorative adverbials and modifiers without damaging fluency, factual meaning, outcome emphasis, or selection value. Treat words such as “高效”“有序”“积极”“全面”“进一步”“持续” as review triggers rather than automatic deletions. Prefer “完成27笔单据审核” over “高效完成27笔单据审核” when 27笔 is the only efficiency evidence; however, retain or replace a modifier when it expresses a supported comparison, sequence, scope, state, causality, or business effect. If deleting one word makes the sentence stiff or weakens a truthful result, rewrite the whole clause around the verified fact. Do not award points for brevity alone.
 
 ## 5. Score before and after
 
