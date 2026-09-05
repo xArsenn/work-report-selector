@@ -31,7 +31,20 @@ Examples of targeted prompts:
 
 Ask or suggest no more than three items at once. Prioritize facts that change result closure, business value, or verifiability. Do not ask for numbers merely to decorate the report.
 
-## 3. Produce two evidence levels only when useful
+## 3. Forecast and choose robust edits
+
+Read [rule-change-forecast.md](rule-change-forecast.md). Predict only directions relevant to the supplied report, then select edits that remain beneficial under both the current rubric and high-confidence forecast scenarios.
+
+Examples:
+
+- If volume inflation is likely to be tightened, connect production counts to quality, acceptance, use, or downstream results when those facts exist.
+- If strategic alignment may gain weight, state the supported connection to a company priority without inventing leadership endorsement.
+- If status verification may become a gate, preserve precise states and put verification next to the claimed result.
+- If role normalization may increase, explain value relative to the employee's actual responsibilities instead of comparing raw totals across roles.
+
+Do not optimize the rewrite around a low-confidence prediction when doing so makes it longer, less natural, or less truthful.
+
+## 4. Produce two evidence levels only when useful
 
 Always provide a **conservative revision** that uses only confirmed source facts and is ready to copy.
 
@@ -53,7 +66,7 @@ Improve:
 - End with a concrete next action when one exists.
 - Remove repetition, generic self-praise, and empty phrases.
 
-## 4. Score before and after
+## 5. Score before and after
 
 Use the daily rubric for daily reports and the weekly rubric for weekly reports. The revised score may rise for clearer structure and better use of existing evidence, but do not award points for placeholder content or unsupplied facts.
 
@@ -71,13 +84,22 @@ Explain score movement in two buckets:
 
 Avoid false precision. Scores are diagnostic estimates, not guarantees of selection.
 
-## 5. Recommended response shape
+After the current-rubric score, add a qualitative forecast stress-test:
+
+- **Robust:** likely to remain strong under the high-confidence changes.
+- **Sensitive:** one forecast change could materially weaken it; name the missing evidence.
+- **Fragile:** depends heavily on wording, raw volume, or an unverified claim likely to be tightened.
+
+Do not invent numerical future weights or a future score unless the user supplies a proposed rule set.
+
+## 6. Recommended response shape
 
 1. Verdict and original score.
 2. Strongest point and up to three priority gaps.
-3. Targeted completion prompts.
-4. Copy-ready conservative revision.
-5. Revised score and what changed.
-6. Optional enhancement skeleton only when missing facts are pivotal.
+3. Up to three relevant forecast directions with confidence and evidence.
+4. Targeted completion prompts.
+5. Copy-ready conservative revision.
+6. Revised score, forecast stress-test, and what changed.
+7. Optional enhancement skeleton only when missing facts are pivotal.
 
 Keep advice specific to the supplied report. Do not return a generic daily-report lecture.
