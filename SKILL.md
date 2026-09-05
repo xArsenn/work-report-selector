@@ -61,6 +61,7 @@ Apply these invariants:
 10. Preserve status precision. Never silently turn 进行中、待验证、已提交、计划上线 into 已完成、已验收、已上线.
 11. Treat an explicit recap such as 今日成果 as a useful extraction aid when it consolidates the strongest numbers and outcomes. Do not penalize this limited repetition as long as it is concise.
 12. For weekly reports, reward cumulative change, milestone progression, verification, reusable assets, and continuity across weeks. Do not merely sum daily activity counts.
+13. Remove meaningless or purely decorative adverbials and modifiers. Delete words such as “高效”“有序”“积极”“全面”“进一步”“持续” when they add no checkable fact, comparison, scope, state, or causal meaning. Keep a modifier only when the report supplies evidence for it or removing it would change the factual meaning.
 
 ## Single-report improvement
 
