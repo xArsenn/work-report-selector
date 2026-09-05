@@ -55,7 +55,14 @@ Improve:
 
 ## 4. Score before and after
 
-Use the main rubric for both scores. The revised score may rise for clearer structure and better use of existing evidence, but do not award points for placeholder content or unsupplied facts.
+Use the daily rubric for daily reports and the weekly rubric for weekly reports. The revised score may rise for clearer structure and better use of existing evidence, but do not award points for placeholder content or unsupplied facts.
+
+For weekly reports, additionally test whether the rewrite:
+
+- Leads with one weekly core or the two most important outcome pillars.
+- Aggregates repeated daily activity into cumulative scope or measurable change.
+- Separates completed outcomes from validation, pending risks, and next-week continuation.
+- Preserves reusable assets such as SOPs, regression sets, comparison tables, monitoring, fallback paths, automation, or documented protocols.
 
 Explain score movement in two buckets:
 

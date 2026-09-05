@@ -1,6 +1,6 @@
 interface:
-  display_name: "优秀日报评选"
-  short_description: "诊断、完善并评分日报，也可解释入选原因和评选排序"
-  default_prompt: "Use $daily-report-selector to diagnose this daily report, suggest missing evidence, and produce a fact-preserving improved version."
+  display_name: "优秀工作报告评选"
+  short_description: "分别按日报和周报规则进行诊断、完善、评分与评选"
+  default_prompt: "Use $work-report-selector to diagnose and improve this daily or weekly work report without inventing facts."
 policy:
   allow_implicit_invocation: true

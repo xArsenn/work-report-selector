@@ -1,11 +1,21 @@
 ---
-name: daily-report-selector
-description: 'Evaluate and improve Chinese employee daily or weekly reports: diagnose gaps, give targeted completion prompts, rewrite without inventing facts, compare before/after scores, rank likely "优秀日报" selections, and explain selection logic. Use for 日报修改、日报优化、日报完善、日报评选、优秀日报、周报评选、日报打分、入选原因 or 筛选规则. Do not treat inferred rules as confirmed company policy.'
+name: work-report-selector
+description: 'Evaluate and improve Chinese employee daily and weekly work reports with report-specific rubrics: diagnose gaps, give targeted completion prompts, rewrite without inventing facts, compare before/after scores, rank likely 优秀日报 or 优秀周报 selections, and explain selection logic. Use for 日报/周报修改、优化、完善、评选、打分、入选原因 or 筛选规则. Do not treat inferred rules as confirmed company policy.'
 ---
 
-# 优秀日报评选
+# 优秀工作报告评选
 
-Use this skill to reproduce the finance-oriented selection pattern inferred from the company's historical winners: reward verifiable outcomes and business impact rather than polished prose or visible busyness.
+Use this skill to reproduce the selection patterns inferred from the company's historical daily- and weekly-report winners. Reward verifiable outcomes and business impact rather than polished prose or visible busyness, while applying different expectations to a one-day report and a full-week report.
+
+## Report type
+
+Detect the period before scoring or rewriting:
+
+- **Daily report:** one working day or explicitly labeled 日报/今日/昨日. Use [references/rubric.md](references/rubric.md).
+- **Weekly report:** a multi-day date range or explicitly labeled 周报/本周/下周. Use [references/weekly-rubric.md](references/weekly-rubric.md).
+- **Mixed or unclear:** infer from the coverage period; if consequentially ambiguous, state the assumed type.
+
+Do not compare a daily score directly with a weekly score. Rank only like periods unless the user explicitly requests a cross-period comparison, in which case compare structural quality rather than raw totals.
 
 ## Operating modes
 
@@ -32,7 +42,7 @@ Do not report an exact selection probability unless calibrated outcome data supp
 
 ## Scoring
 
-Read [references/rubric.md](references/rubric.md) whenever scoring, ranking, or calibrating reports. Also read [references/calibration-signals.md](references/calibration-signals.md) when predicting winners or learning from newly labeled results. Score each report out of 100 using its five dimensions. Judge substance before format.
+Read the report-type rubric whenever scoring, ranking, or calibrating. Also read [references/calibration-signals.md](references/calibration-signals.md) when predicting winners or learning from newly labeled results. Score each report out of 100. Judge substance before format.
 
 Apply these invariants:
 
@@ -47,10 +57,11 @@ Apply these invariants:
 9. Resist metric gaming. Repeated counts, long task lists, or AI-generated volume do not substitute for quality, acceptance, conversion, savings, risk reduction, or a meaningful completed state.
 10. Preserve status precision. Never silently turn 进行中、待验证、已提交、计划上线 into 已完成、已验收、已上线.
 11. Treat an explicit recap such as 今日成果 as a useful extraction aid when it consolidates the strongest numbers and outcomes. Do not penalize this limited repetition as long as it is concise.
+12. For weekly reports, reward cumulative change, milestone progression, verification, reusable assets, and continuity across weeks. Do not merely sum daily activity counts.
 
 ## Single-report improvement
 
-When the user gives one report for revision, read [references/improvement-workflow.md](references/improvement-workflow.md) and follow it. The default deliverable is useful immediately, even when information is missing:
+When the user gives one report for revision, read [references/improvement-workflow.md](references/improvement-workflow.md), then apply the correct daily or weekly rubric. The default deliverable is useful immediately, even when information is missing:
 
 1. Diagnose the report and score the original.
 2. Identify the highest-impact missing facts and ask at most three targeted completion questions or prompts.

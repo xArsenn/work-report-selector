@@ -38,3 +38,40 @@ Implication: full completion is not mandatory. Partial results can be strong whe
 ## Remaining uncertainty
 
 Do not infer a stable cutoff, department quota, or exact weight from winners alone. Request non-winning reports from the same dates and job families when the user wants stronger calibration.
+
+## Confirmed weekly-report patterns
+
+These patterns recur across confirmed selected weekly reports from product, engineering, legal, operations, and growth roles.
+
+### A weekly core compresses the period
+
+Strong reports often begin with one sentence naming the week's main transformation: prototype to reviewed solution, manual to automated flow, single-point test to batch operation, unstable service to verified capacity, or platform activity to business-data closure. A formal one-line summary is helpful but not mandatory when the first result already performs this function.
+
+### Before/after and cumulative scope are unusually strong
+
+Recurring evidence includes latency before/after, throughput, error rate, resource reduction, cumulative cases, number of interfaces/services/channels/versions/contracts, spend, leads, acquisition cost, orders, revenue, and wall-clock savings. Reward a coherent measurement chain more than disconnected numbers.
+
+### Verification protects the claimed result
+
+Selected reports frequently state production canary validation, regression pass counts, byte-level reconciliation, capacity testing, zero-error behavior, rollout state, cross-source reconciliation, or explicit pending acceptance. This shows that the result is reliable rather than merely developed.
+
+### Systemization outranks isolated fixes
+
+High-value weekly work often leaves a reusable capability: an SOP, fallback path, automated diagnostic chain, permanent regression set, comparison table, deployment checklist, monitoring rule, data definition, account-management platform, or repeatable workflow. Reward the resulting organizational asset in addition to the immediate fix.
+
+### Business and risk chains vary by role
+
+- Product: user-visible behavior, decision alignment, rollout, versions, expiry readiness, and operational clarity.
+- Engineering: bottleneck cause, measurable improvement, production validation, stability, capacity, security, and recovery.
+- Legal: completed document volume, case-specific states, account unfreezing or response readiness, and prevention insight.
+- Growth/operations: spend → opening/lead → acquisition → order → revenue, plus data-definition accuracy and scalable execution.
+
+Do not require all roles to produce revenue. Compliance, avoided disruption, data accuracy, delivery readiness, and reduced manual work are valid value paths.
+
+### Honest incompleteness can coexist with selection
+
+Selected reports sometimes state that a direction remains unsettled, a chain still needs regression, or named tasks were not started. This is not automatically negative when the main weekly outcomes are substantial and pending work has a clear next step. Preserve these distinctions.
+
+### Weekly continuity matters
+
+Reward evidence that the report delivered a prior-week commitment and that next-week plans follow directly from current validation gaps, risks, or unfinished milestones. Generic plans such as `继续完善` are weak unless the object and acceptance condition are clear.
