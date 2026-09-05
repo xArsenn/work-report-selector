@@ -20,7 +20,7 @@ Use this rubric as a prediction model for likely selection, not as confirmed com
 
 Do not reward decorative numbers such as dates, list numbering, or counts that do not establish output or impact.
 
-Cap this dimension at 15 when the report supplies high volume but no quality, acceptance, conversion, outcome, or other evidence that the volume was useful.
+Normally cap this dimension at 15 when the report supplies high volume but no quality, acceptance, conversion, outcome, or other evidence that the volume was useful. For production roles whose direct deliverable is content or units produced, verified completed output can itself be meaningful evidence; named formats, template reuse, supporting asset preparation, or workflow improvement can justify 16–20 even before downstream conversion is known. Do not extend this exception to unverified or unusable volume.
 
 ### 3. Business value — 20
 
@@ -64,7 +64,7 @@ Do not deduct merely for short length, imperfect formatting, missing a next-day 
 
 - 85–100: Strong winner
 - 75–84: Likely shortlist / winner depending on quota
-- 65–74: Solid report, but not automatically outstanding
+- 65–74: Competitive report that can win depending on the day's comparison set and quota
 - 50–64: Mostly routine or under-evidenced
 - Below 50: Unlikely to be selected
 
@@ -81,3 +81,5 @@ When both winners and non-winners are supplied:
 3. Change a weight only when the separating pattern recurs across several samples; do not overfit one example.
 4. Record the revised weight, supporting evidence, and confidence level in the response.
 5. Preserve the five-dimension total of 100 unless the user explicitly requests another system.
+
+When only new winners are supplied, record supported positive signals but do not change the decision boundary as if counterexamples had been observed.
