@@ -1,6 +1,6 @@
-# Finance-oriented daily report rubric
+# Daily report quality rubric
 
-Use this rubric as a prediction model for likely selection, not as confirmed company policy unless the user explicitly confirms it.
+Use this rubric only to evaluate how well a daily report is written and evidenced. Do not use the total as a proxy for selection probability.
 
 ## Score dimensions (100 points)
 
@@ -57,18 +57,19 @@ Apply conservatively and never double-penalize the same weakness:
 - −2 to −5: Problem is described but neither owned nor converted into a corrective action.
 - −3 to −8: Volume is presented as value while quality, acceptance, conversion, or downstream use is contradicted or conspicuously absent.
 - −3 to −10: Wording upgrades a pending state into a completed state or implies causality unsupported by the source.
+- −2 to −8: The daily report is avoidably long relative to its substance, especially when it repeats a core summary, background, projected value, recap, or plan. Apply this because leadership has explicitly required shorter daily reports; do not invent a hard character threshold.
 
-Do not deduct merely for short length, imperfect formatting, missing a next-day plan, or missing a target when the report supplies a strong variance explanation and corrective action.
+Do not deduct merely for short length, imperfect formatting, missing a next-day plan, or missing a target when the report supplies a strong variance explanation and corrective action. Under the confirmed length constraint, shorter is preferable when substance is equal.
 
 ## Interpretation
 
-- 85–100: Strong winner
-- 75–84: Likely shortlist / winner depending on quota
-- 65–74: Competitive report that can win depending on the day's comparison set and quota
-- 50–64: Mostly routine or under-evidenced
-- Below 50: Unlikely to be selected
+- 85–100: Excellent report quality
+- 75–84: Strong report quality
+- 65–74: Solid but materially improvable
+- 50–64: Understandable but routine or under-evidenced
+- Below 50: Weak or difficult to verify
 
-Use these bands as defaults. When scoring a batch, relative ranking and the user's quota matter more than a fixed cutoff.
+These bands describe writing quality only. A high score does not imply selection, because selection follows separate rules and a fixed competitive quota.
 
 For single-report revisions, score only facts present in the copy-ready version. Placeholders and suggested evidence receive zero points until confirmed.
 

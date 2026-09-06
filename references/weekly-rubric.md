@@ -1,6 +1,6 @@
-# Weekly work report rubric
+# Weekly report quality rubric
 
-Use this rubric to predict likely 优秀周报 selection and to improve one weekly report. It is inferred from confirmed winners, not a confirmed company policy.
+Use this rubric to evaluate how well a weekly report communicates accumulated work, evidence, value, and continuity. Do not use the total as a proxy for 优秀周报 selection probability.
 
 ## Score dimensions (100 points)
 
@@ -62,10 +62,10 @@ Apply conservatively and avoid double-counting:
 
 ## Interpretation
 
-- 85–100: Strong winner
-- 75–84: Likely shortlist / winner depending on quota
-- 65–74: Competitive weekly report that can win depending on the comparison set
+- 85–100: Excellent weekly-report quality
+- 75–84: Strong weekly-report quality
+- 65–74: Solid but materially improvable
 - 50–64: Useful work, but the weekly narrative or evidence is underdeveloped
-- Below 50: Unlikely to be selected
+- Below 50: Weak or difficult to verify
 
-Rank comparable weekly periods against one another. Do not compare raw totals across job families; compare outcome strength relative to role, scope, and controllability.
+These bands describe report quality only. Evaluate selection separately using confirmed and inferred selection rules. Do not compare raw totals across job families; compare outcome strength relative to role, scope, and controllability.
