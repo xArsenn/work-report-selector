@@ -30,6 +30,8 @@ For each selection feature, maintain a beta posterior for its prevalence among p
 
 This learns what winners commonly contain. It does not by itself estimate causal lift or selection probability because population negatives are missing.
 
+Repeated winners from the same reporter are not independent observations. Track reporter identity, estimate recurring patterns within that reporter, and use partial pooling or diminishing contribution so one prolific winner cannot dominate the published-winner profile. When enough reporters exist, validate learned features by holding out whole reporters rather than random reports. Use a recurring winner as a structural benchmark, not as evidence that their name, department, vocabulary, or access to engineering-style metrics should raise another employee's probability.
+
 ### Personal longitudinal outcome model
 
 Use the user's daily selected/non-selected outcomes as the only directly observed negative stream. Begin from the company base rate and shrink personal estimates toward it. Fit report features only with strong regularization; early personal data may contain few or no positive outcomes.

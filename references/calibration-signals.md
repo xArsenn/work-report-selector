@@ -161,3 +161,32 @@ Selected reports sometimes state that a direction remains unsettled, a chain sti
 ### Weekly continuity matters
 
 Reward evidence that the report delivered a prior-week commitment and that next-week plans follow directly from current validation gaps, risks, or unfinished milestones. Generic plans such as `继续完善` are weak unless the object and acceptance condition are clear.
+
+## Confirmed daily winner set — 2026-09-09
+
+Three confirmed winners from the same daily pool supplied a cross-role comparison.
+
+- An engineering winner migrated an AI-profile capability end to end, passed 45 tests, corrected a 50-yuan overcharge with root cause and historical reversal, and migrated 16 employees plus 51,095 resources.
+- A finance winner completed first-half R&D-expense aggregation, corrected two named July-report errors—venue operating expense and communications expense—and bounded missing data, contract revision, tax filing, and the interest schedule as pending work with next-day follow-through.
+- A product/engineering winner completed performance-scope and performance-calculation capabilities, verified both locally, merged them to mainline, and kept QR-payment enablement explicitly pending on an external configuration change.
+
+Shared implications:
+
+- Require at least one landed outcome, then reward named evidence, verification or correction, precise pending states, and a next action tied to the unfinished node.
+- A finance report can win without a large revenue number when it combines completed accounting work, specific error correction, status precision, and continuity.
+- Honest incompleteness is compatible with selection when the report has a stronger completed core.
+- The measured body lengths, excluding mentions and source notices, were approximately 311, 335, and 321 non-space characters. This shows that information density matters more than a mechanical short cap; it does not establish a preferred or maximum length.
+
+The finance winner had a prospective `provisional-bayes-v0.2` estimate of 20.56% versus the 6.98% base rate and was selected. Preserve that pre-result prediction unchanged and record the outcome as `1`; one successful case supports the direction of the model but is insufficient to claim calibration accuracy or narrow uncertainty.
+
+### Recurring-winner benchmark — James
+
+The user has identified James as a reporter whose daily reports are selected frequently. Across supplied selected daily and weekly examples, his recurring structure is:
+
+1. Lead with one state transition or central project rather than a generic task summary.
+2. Connect delivery to a prior plan when the continuity is real.
+3. Use auditable states such as locally verified, merged to mainline, entered pre-release, version released, or still awaiting production configuration.
+4. Explain what operational behavior changed, not only the feature name.
+5. Preserve unfinished dependencies and end with one tightly linked next step.
+
+Treat this as a high-priority longitudinal benchmark for structure. Transfer it to finance as `prior problem or commitment → completed finance node → reconciliation or correction evidence → precise pending dependency → next closure action`. Do not require finance reports to imitate engineering terminology or metrics. Because repeated James reports are correlated and full same-day non-winner pools remain unavailable, apply diminishing contribution by reporter and do not infer that his identity or department causes selection.

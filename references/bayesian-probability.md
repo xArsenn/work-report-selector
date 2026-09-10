@@ -10,15 +10,14 @@ Build probability from selection outcomes and rule features: confirmed constrain
 
 ## Confirmed base rate
 
-- Company headcount: 49.
-- Core managers exempt from daily reports: 6.
-- Nominal daily candidate pool: 43.
-- Daily winners: 3.
-- Exchangeable prior probability before report evidence: `p0 = 3 / 43 = 0.0698`.
+- Default daily candidate pool: 43; daily winners: 3.
+- Default weekly candidate pool: 43; weekly winners: 3.
+- The user has confirmed these defaults apply unless a changed pool or quota is supplied.
+- Exchangeable prior probability before report evidence for either type: `p0 = 3 / 43 = 0.0698`.
 - Prior odds: `O0 = 3 / 40 = 0.075`.
 - Logistic intercept equivalent: `logit(p0) ≈ -2.59`.
 
-If the actual number of submitted reports differs on a date, use `3 / actual_submissions` for that day's base rate. Never assume all 43 submitted when contrary data is supplied.
+If the actual pool or quota differs for a period, use `actual quota / actual candidates` for that period's base rate. Daily and weekly models share the default prior but must retain separate feature calibration and outcome ledgers.
 
 ## Evidence update
 
@@ -83,7 +82,8 @@ With enough labeled data, use hierarchical Bayesian logistic regression:
 - Use regularizing zero-centered priors for feature coefficients so small samples do not create extreme effects.
 - Include a date effect because each day's comparison pool differs.
 - Include a role effect to avoid favoring functions with naturally larger activity counts.
-- Train daily and weekly selection separately. Do not use the daily 3-of-43 prior for weekly reports unless the weekly quota and eligible pool are confirmed.
+- Account for repeated reports from the same person with a reporter-level random effect or equivalent cluster shrinkage. This controls correlation; do not use reporter identity itself as a favorable feature when estimating another employee's probability.
+- Train daily and weekly selection separately. Both currently use the confirmed 3-of-43 default prior, but their feature effects and outcome histories must not be pooled blindly.
 
 Because exactly three winners are chosen from the same pool, probabilities are competitive and not independent. When full same-day candidate sets become available, prefer a within-day ranking or conditional-choice model and normalize the expected winner count to approximately three.
 
