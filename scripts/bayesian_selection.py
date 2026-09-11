@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Provisional Bayesian selector for daily-report inclusion probability."""
+"""Conservative provisional Bayesian selector for work-report inclusion."""
 
 from __future__ import annotations
 
@@ -11,13 +11,13 @@ from pathlib import Path
 
 
 FEATURE_PRIORS = {
-    "landed_outcome": (1.10, 0.45),
-    "quantified_evidence": (0.60, 0.40),
-    "verified_operation": (0.90, 0.45),
-    "closed_loop": (0.80, 0.45),
+    "landed_outcome": (0.80, 0.45),
+    "quantified_evidence": (0.65, 0.40),
+    "verified_operation": (1.05, 0.45),
+    "closed_loop": (0.95, 0.45),
     "completed_fallback": (0.55, 0.40),
     "measured_funnel": (0.65, 0.45),
-    "live_use": (0.75, 0.45),
+    "live_use": (0.95, 0.45),
     "pending_share": (-1.00, 0.45),
     "projected_value_share": (-0.65, 0.40),
     "verbosity_violation": (-0.85, 0.35),
@@ -26,7 +26,11 @@ FEATURE_PRIORS = {
     "diffuse_task_list": (-0.55, 0.40),
     "unresolved_diagnosis": (-0.75, 0.40),
     "duplicated_content": (-1.10, 0.35),
+    "dominant_outcome": (0.85, 0.45),
+    "thin_completion_evidence": (-0.90, 0.40),
 }
+
+EFFECT_SCALE = 0.65
 
 
 def logistic(value: float) -> float:
@@ -83,12 +87,12 @@ def estimate(payload: dict, draws: int, seed: int) -> dict:
         log_odds = base_logit
         for name, value in features.items():
             mean, sd = FEATURE_PRIORS[name]
-            log_odds += rng.gauss(mean, sd) * value
+            log_odds += EFFECT_SCALE * rng.gauss(mean, sd) * value
         probabilities.append(logistic(log_odds))
 
     estimate_value = sum(probabilities) / len(probabilities)
     return {
-        "model_version": "provisional-bayes-v0.2",
+        "model_version": "provisional-bayes-v0.3",
         "probability_percent": round(estimate_value * 100, 2),
         "credible_interval_80_percent": [
             round(quantile(probabilities, 0.10) * 100, 2),
@@ -98,6 +102,7 @@ def estimate(payload: dict, draws: int, seed: int) -> dict:
         "actual_submissions": submissions,
         "quota": quota,
         "confidence": "low",
+        "effect_scale": EFFECT_SCALE,
         "features": features,
         "warning": (
             "Exact model estimate, not a guaranteed real-world probability. "
