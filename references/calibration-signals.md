@@ -190,3 +190,22 @@ The user has identified James as a reporter whose daily reports are selected fre
 5. Preserve unfinished dependencies and end with one tightly linked next step.
 
 Treat this as a high-priority longitudinal benchmark for structure. Transfer it to finance as `prior problem or commitment → completed finance node → reconciliation or correction evidence → precise pending dependency → next closure action`. Do not require finance reports to imitate engineering terminology or metrics. Because repeated James reports are correlated and full same-day non-winner pools remain unavailable, apply diminishing contribution by reporter and do not infer that his identity or department causes selection.
+
+## Confirmed daily outcome and winner set — 2026-09-10
+
+A finance report was prospectively assigned 54.27% selection probability by `provisional-bayes-v0.2` but was not selected. Preserve the forecast and record outcome `0`; its Brier loss was approximately 0.295. The report completed two company-level July business reports, received and invoiced a September technical-service fee, and calculated VAT and income tax for an interest payment. However, it omitted the service-fee amount, tax amounts or conclusion, reconciliation/acceptance evidence for the reports, and a single dominant operating change. This is a confirmed false positive and shows that v0.2 over-weighted generic completion labels and under-weighted evidence depth and same-day competitive distinctiveness.
+
+The three selected reports supplied stronger live or test verification:
+
+- One AI-profile voice flow ran end to end in the test environment, fixed a specific completion-timing defect, verified exact closing rounds in text and voice, and passed 45 tests.
+- One CRM definition and one urgent contract-saving change were tested and launched the same day; the report also supplied week-over-week percentages and counts for distribution data.
+- One messaging experiment produced 10 templates and an A/B/C plan for about 20,000 recipients, opened the production sending interface, scheduled 1,460 same-day messages, added monitoring, and observed zero interface failures.
+
+Calibration implications:
+
+- Completion wording alone is insufficient when the output lacks scale, reconciliation, acceptance, live use, a decision result, or an exception closed.
+- Increase attention to one dominant outcome and the chain `delivery → verification → measured result or corrected exception`.
+- Dates, named taxes, named reports, and the number of corrected accounts establish specificity but should not be scored as quantified impact unless they explain scale or outcome.
+- The three winners came from the same AI business unit. Treat possible strategic-priority effects as tentative because the other 40 reports are unobserved; never use department identity as a positive feature.
+- Length was not the separator: evidence-rich reports may be longer than a concise finance report and still win.
+- The two prospective personal outcomes currently available are directionally inverted—20.56% selected and 54.27% not selected—so exact probability calibration remains weak. Keep confidence low and shrink future estimates toward the 6.98% base rate until more prospective outcomes accumulate.

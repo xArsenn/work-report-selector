@@ -52,6 +52,8 @@ Input feature values range from 0 to 1:
 - `diffuse_task_list`: extent to which many unrelated items lack one dominant result.
 - `unresolved_diagnosis`: extent to which problems are identified or escalated but not corrected, mitigated, or verified.
 - `duplicated_content`: degree of repeated report content, especially full-paragraph duplication.
+- `dominant_outcome`: strength of one central result that compresses the day and clearly outranks routine supporting work.
+- `thin_completion_evidence`: extent to which completed administrative outputs lack scale, reconciliation, acceptance, decision use, live operation, or a resolved exception.
 
 Example input:
 
@@ -70,7 +72,14 @@ Example input:
 
 Run with `python scripts/bayesian_selection.py --input input.json`. Unspecified features default to zero. Feature assignments must be justified from the report and shown to the user when they materially affect the result.
 
-The current coefficients are prior assumptions informed by confirmed rules and the small labeled set; they are not learned stable effects. Replace them with posterior coefficients after sufficient full-pool data is collected.
+Version `provisional-bayes-v0.3` conservatively scales expert-prior feature effects toward the quota base rate after a confirmed v0.2 false positive. It also separates dominant outcomes from thin completion evidence. The coefficients remain prior assumptions, not learned stable effects. Replace them with posterior coefficients after sufficient prospective data is collected.
+
+Assign evidence features conservatively:
+
+- A deliverable marked complete but lacking scale, reconciliation, acceptance, use, or effect should not receive strong `quantified_evidence`, `verified_operation`, `closed_loop`, or `live_use` values merely because it has a date or named object.
+- `landed_outcome` measures usable result state; `dominant_outcome` measures whether one result is distinctive enough to organize the day. They are related but not interchangeable.
+- Use `thin_completion_evidence` when completion is real but the report does not expose why it mattered or how it was checked. Do not relabel completed work as pending.
+- Do not use department, AI vocabulary, or a recurring winner's identity as a positive input.
 
 ## Preferred calibrated model
 
@@ -99,7 +108,7 @@ If company-wide non-winners cannot be obtained, use [partial-observation-model.m
 
 - Always output the model's numeric point estimate when probability is requested.
 - Also report its 80% credible interval, base rate, actual-submission assumption, confidence, and strongest positive and negative factors.
-- Before empirical calibration, label the number `provisional-bayes-v0.2 / low confidence`. “Accurate” means reproducible under stated inputs, not guaranteed to equal the administrator's unknown decision probability.
+- Before empirical calibration, label the number `provisional-bayes-v0.3 / low confidence`. “Accurate” means reproducible under stated inputs, not guaranteed to equal the administrator's unknown decision probability.
 - Once an empirical model is fitted, report its posterior mean and credible interval and replace the provisional coefficient priors.
 - Keep quality score and selection probability side by side. Explain disagreements, such as `quality 88/100 but probability below baseline because the report violates the confirmed length preference and lacks the day's favored selection pattern`.
 - Validate on later dates, not random rows from the same dates. Track calibration and Brier score.
@@ -127,7 +136,7 @@ Do not include credible-interval terminology, odds, coefficients, Bayes factors,
 Show:
 
 ```text
-模型：provisional-bayes-v0.2
+模型：provisional-bayes-v0.3
 候选池/名额：43/3
 先验概率：6.98%
 先验赔率：3:40

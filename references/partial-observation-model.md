@@ -20,6 +20,8 @@ Record one prospective row per date before the result is known:
 
 Never overwrite the pre-result prediction after observing the outcome. Store corrections as a new model version to prevent hindsight leakage.
 
+When a prospective estimate is badly miscalibrated, append the unchanged prediction, outcome, and scoring loss to the ledger. Any feature-definition or coefficient change must receive a new model version and apply only to later reports. With only a few personal outcomes, prefer conservative shrinkage toward the quota prior over fitting coefficients to explain the latest case.
+
 ## Three complementary components
 
 ### Published-winner profile
