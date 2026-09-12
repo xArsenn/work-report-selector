@@ -92,7 +92,7 @@ def estimate(payload: dict, draws: int, seed: int) -> dict:
 
     estimate_value = sum(probabilities) / len(probabilities)
     return {
-        "model_version": "provisional-bayes-v0.3",
+        "model_version": "provisional-bayes-v0.4",
         "probability_percent": round(estimate_value * 100, 2),
         "credible_interval_80_percent": [
             round(quantile(probabilities, 0.10) * 100, 2),
