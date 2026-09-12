@@ -24,6 +24,7 @@ Infer the requested mode from the user's materials:
 - **Rank:** score multiple reports, rank them, and recommend winners.
 - **Explain:** analyze why supplied winners were selected and infer the likely rules.
 - **Improve:** diagnose one report, give targeted completion prompts, rewrite it without inventing facts, and show the likely score improvement.
+- **Template:** when the user asks for a reusable or comprehensive daily-report template, read [references/daily-report-template.md](references/daily-report-template.md). Return a complete evidence-collection structure plus a concise submission form; treat its fields as optional and adaptive rather than a mandatory company format.
 - **Calibrate:** update the rubric from new labeled winners and non-winners.
 - **Forecast:** predict likely leadership changes to weights, gates, anti-gaming rules, role normalization, or evidence requirements, then explain how to prepare reports robustly.
 - **Probability:** produce a numeric Bayesian selection estimate with an uncertainty interval. Read [references/bayesian-probability.md](references/bayesian-probability.md); when company-wide non-winners are unavailable, also read [references/partial-observation-model.md](references/partial-observation-model.md). Use `scripts/bayesian_selection.py` for reproducible calculation.
@@ -124,7 +125,7 @@ When the user gives one report for revision, read [references/improvement-workfl
 2. Forecast up to three likely rule-change directions that are relevant to this specific report.
 3. Identify robust improvement targets that perform well under both the current rubric and high-confidence forecast scenarios.
 4. Ask at most three targeted completion questions or prompts.
-5. Produce a conservative, compact polished version using only supplied facts and respecting the confirmed length constraint. If no numeric limit is known, optimize for the shortest complete version rather than inventing a count.
+5. Produce a conservative, compact polished version using only supplied facts and respecting the confirmed length constraint. For daily reports, use [references/daily-report-template.md](references/daily-report-template.md) as an adaptable evidence pattern, not a fixed heading requirement. If no numeric limit is known, optimize for the shortest complete version rather than inventing a count.
 6. Where a materially stronger claim requires confirmation, use a clear placeholder such as `[待补：实际耗时]`; never guess.
 7. Re-score the conservative revision under the current rubric and stress-test it qualitatively against the forecast scenarios.
 
