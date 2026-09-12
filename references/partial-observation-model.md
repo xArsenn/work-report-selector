@@ -15,10 +15,13 @@ Record one prospective row per date before the result is known:
 - the model's pre-result point estimate, interval, model version, and feature inputs;
 - the user's eventual selected `1` or not selected `0` outcome;
 - the three published winner reports and their role families;
+- writing provenance when known: employee-authored, skill-assisted, or unknown;
 - character count and any confirmed rule violations;
 - nominal and, when known, actual candidate count and quota.
 
 Never overwrite the pre-result prediction after observing the outcome. Store corrections as a new model version to prevent hindsight leakage.
+
+Writing provenance prevents causal overclaiming. A skill-assisted winner validates that the submitted content matched that day's selection, but it does not prove the skill caused selection. An employee-authored winner is useful evidence that the same structural pattern occurs independently of the skill's wording. Never use authorship source as a favorable selection feature.
 
 When a prospective estimate is badly miscalibrated, append the unchanged prediction, outcome, and scoring loss to the ledger. Any feature-definition or coefficient change must receive a new model version and apply only to later reports. With only a few personal outcomes, prefer conservative shrinkage toward the quota prior over fitting coefficients to explain the latest case.
 

@@ -48,6 +48,8 @@ Do not optimize the rewrite around a low-confidence prediction when doing so mak
 
 Always provide a **conservative revision** that uses only confirmed source facts and is ready to copy.
 
+For daily reports, read [daily-report-template.md](daily-report-template.md). Use its value-chain fields to check completeness, but omit empty or repetitive headings from the submitted version. A comprehensive internal fact sheet must still produce a concise external report.
+
 If missing facts materially limit the report, optionally add an **enhancement skeleton** using explicit placeholders. Never mix placeholders into the copy-ready version unless the user requests a fill-in template.
 
 Preserve:

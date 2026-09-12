@@ -209,3 +209,34 @@ Calibration implications:
 - The three winners came from the same AI business unit. Treat possible strategic-priority effects as tentative because the other 40 reports are unobserved; never use department identity as a positive feature.
 - Length was not the separator: evidence-rich reports may be longer than a concise finance report and still win.
 - The two prospective personal outcomes currently available are directionally inverted—20.56% selected and 54.27% not selected—so exact probability calibration remains weak. Keep confidence low and shrink future estimates toward the 6.98% base rate until more prospective outcomes accumulate.
+
+## Confirmed daily winner additions — 2026-09-11
+
+The user supplied two confirmed winners from the same date. The full three-winner set and the other forty reports remain unobserved, so treat these as positive signals rather than a complete same-day decision boundary.
+
+### Cross-entity payroll control and bounded next stages
+
+One HR/administration winner completed and reviewed August payroll for about 50 people across 10 company entities, found no data differences, issued payslips, and handled five employee questions. It also formed probation-review results and prepared four entity-cancellation documents, while stating that responsible-person review, approval, and submission remained pending with concrete timing.
+
+Implications:
+
+- A scoped control check can be a strong verified result even when it finds no anomaly. Reward `约50人、10家公司、复核暂无差异`; do not reward an unscoped `检查无误` equally.
+- One completed, verified operating core can support several bounded next-stage items. Do not require every item to reach final approval or submission on the same day.
+- Routine payroll or administration becomes more distinctive through scope, review outcome, questions resolved, document counts, and exact next nodes—not through activity labels alone.
+- This report was skill-assisted on another computer. Record the provenance, but do not claim that the skill caused selection or treat skill wording as a positive feature.
+
+### One-project defect closure with honest deployment status
+
+One employee-authored product/engineering winner grouped four fixes under the same AI-profile project. It explained two root causes, removed a faulty deduplication rule, increased an item limit, added per-field fallback, corrected an invalid dialog label, verified normal behavior, and reported 47 tests passing. It accurately kept the main changes at `已推送待部署` or `待重新发行`.
+
+Implications:
+
+- Multiple subproblems under one named project are not a diffuse task list when they form one coherent outcome.
+- `symptom → root cause → fix → verification` is stronger than generic business-value narration.
+- Tested fixes can remain competitive while deployment is pending when the report clearly distinguishes test, push, deployment, and release states.
+- A separate reflection or next-day plan is not required when the body already supplies complete evidence and honest pending states.
+- Because this reporter is already a recurring winner, apply reporter-level shrinkage. The employee-authored provenance supports that the structural pattern exists independently of skill-generated phrasing, but it is not a fully independent company-wide confirmation.
+
+### Cross-role common signal
+
+Across the HR/administration and product/engineering winners, the shared structure is `one dominant work object → explicit scope or root cause → verified result → precise next state`. This supports role-normalized evidence: payroll can prove value through controlled scope and no-difference review, while engineering can prove value through root cause and passing tests. Do not require identical metrics or vocabulary across roles.
