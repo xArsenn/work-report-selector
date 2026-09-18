@@ -37,9 +37,9 @@ Until full same-day candidate sets are available, use `scripts/bayesian_selectio
 
 Input feature values range from 0 to 1:
 
-- `landed_outcome`: strength of a result completed and usable today.
+- `landed_outcome`: strength of a result completed and usable today. A clearly verified user-visible or process before/after change can qualify even without a large numeric metric.
 - `quantified_evidence`: strength of meaningful quantities or audit evidence.
-- `verified_operation`: extent of testing, reconciliation, or operating verification. A scoped control check that finds no anomaly is valid verification when the checked population and result are explicit.
+- `verified_operation`: extent of testing, reconciliation, or operating verification. A scoped control check that finds no anomaly is valid verification when the checked population and result are explicit. Direct observation that an identified broken or limited behavior now works in a named scenario also counts.
 - `closed_loop`: completeness of problem → action → verification.
 - `completed_fallback`: strength of an implemented risk fallback.
 - `measured_funnel`: completeness of planned → actual → outcome channel data.
@@ -72,7 +72,7 @@ Example input:
 
 Run with `python scripts/bayesian_selection.py --input input.json`. Unspecified features default to zero. Feature assignments must be justified from the report and shown to the user when they materially affect the result.
 
-Version `provisional-bayes-v0.4` retains the conservative v0.3 coefficient scale and clarifies two feature definitions from newly confirmed winners: scoped no-anomaly checks can count as verification, and same-project subproblems do not create diffusion by item count alone. The coefficients remain prior assumptions, not learned stable effects. Replace them with posterior coefficients after sufficient prospective data is collected.
+Two regimes are available. `legacy-bayes-v0.7` preserves the pre-2026-09-17 model for historical reports. `provisional-theme-bayes-v1.0` starts a new model after leadership's rule reset and adds theme-alignment features. It has very-low confidence because only one complete post-change winner set is available. Never blend a legacy posterior into the theme regime.
 
 Assign evidence features conservatively:
 
@@ -80,9 +80,25 @@ Assign evidence features conservatively:
 - `landed_outcome` measures usable result state; `dominant_outcome` measures whether one result is distinctive enough to organize the day. They are related but not interchangeable.
 - Use `thin_completion_evidence` when completion is real but the report does not expose why it mattered or how it was checked. Do not relabel completed work as pending.
 - Assign `verified_operation` from the scope and result of a check, not only from defects found. `约50人、10家公司、复核暂无差异` is stronger evidence than an unscoped claim such as `检查无误`.
+- Assign `verified_operation` when a named broken or limited behavior is shown to work after the change in a specific scenario, even if no test count is available. Do not award it for generic claims such as `体验已优化`.
 - Assign `diffuse_task_list` by project and outcome coherence. Four fixes to one product can form one dominant outcome; four unrelated administrative errands usually cannot.
+- For daily reports, role-level value coherence also matters. Several finance items across accounting, invoicing, and cash control may receive low `diffuse_task_list` when one verified result anchors the day and every item has a precise state. Do not extend this exception to an unstructured list of routine errands.
 - A tested fix may remain strong while deployment is pending when the report clearly distinguishes `测试通过` from `已上线`. Do not treat pending deployment as live use.
+- When one result is closed and verified but another item is only partly tested, score each item separately. The closed result may support `dominant_outcome`; it does not erase `pending_share` or convert the partial item into `landed_outcome`.
+- Assign `verified_operation` strongly for an end-to-end workflow checked through actual operation when the scope and observed result are explicit.
+- Assign `landed_outcome` to the exact confirmed finance node. A 39,000-yuan transfer to a named account for loan repayment is a landed transfer; it is not a completed loan repayment unless deduction or settlement is confirmed.
 - Do not use department, AI vocabulary, or a recurring winner's identity as a positive input.
+
+For weekly reports, apply these additional assignment rules:
+
+- Set `report_type` to `weekly` in the script input. Use `daily` for daily reports; omission defaults to `daily` for backward compatibility.
+- Give strong `landed_outcome` only when the central weekly project reached actual use, payment, acceptance, reconciliation, production operation, or a decision-ready state within the reporting cutoff.
+- Give strong `live_use` only when the report shows real operating behavior. Publication plus testing, an MVP awaiting integration, funds prepared for a later payment, or a quote awaiting signature is not strong live use.
+- Give strong `dominant_outcome` only when one project or at most two connected pillars organize the week's evidence. A list of unrelated policies, reports, payments, limits, negotiations, and reconciliations remains diffuse even when individually complete.
+- Assign `pending_share` by the importance of unfinished nodes, not by item count. If the central automation, payment, contract, or reconciliation is pending, its weight is large.
+- Never use results completed after the weekly cutoff to raise prior-week features. Preserve the original prediction and record the later result in the next reporting period.
+
+For theme-regime reports, read [theme-based-selection.md](theme-based-selection.md), set `rule_regime` to `theme`, and provide the official `selection_theme`. Theme features measure rule match; ordinary result features remain supporting evidence. A missing current theme prevents a confident selection estimate.
 
 ## Preferred calibrated model
 
@@ -111,7 +127,7 @@ If company-wide non-winners cannot be obtained, use [partial-observation-model.m
 
 - Always output the model's numeric point estimate when probability is requested.
 - Also report its 80% credible interval, base rate, actual-submission assumption, confidence, and strongest positive and negative factors.
-- Before empirical calibration, label the number `provisional-bayes-v0.4 / low confidence`. “Accurate” means reproducible under stated inputs, not guaranteed to equal the administrator's unknown decision probability.
+- For legacy reports, label the number `legacy-bayes-v0.7 / low confidence`. For post-change reports, label it `provisional-theme-bayes-v1.0 / very-low confidence`. “Accurate” means reproducible under stated inputs, not guaranteed to equal the administrator's unknown decision probability.
 - Once an empirical model is fitted, report its posterior mean and credible interval and replace the provisional coefficient priors.
 - Keep quality score and selection probability side by side. Explain disagreements, such as `quality 88/100 but probability below baseline because the report violates the confirmed length preference and lacks the day's favored selection pattern`.
 - Validate on later dates, not random rows from the same dates. Track calibration and Brier score.
@@ -139,7 +155,9 @@ Do not include credible-interval terminology, odds, coefficients, Bayes factors,
 Show:
 
 ```text
-模型：provisional-bayes-v0.4
+模型：provisional-theme-bayes-v1.0
+规则版本：theme
+评选主题：方法论沉淀奖
 候选池/名额：43/3
 先验概率：6.98%
 先验赔率：3:40

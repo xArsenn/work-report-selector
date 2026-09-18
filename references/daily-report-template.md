@@ -2,6 +2,8 @@
 
 Use this reference when the user asks for a 日报模板 or when a daily-report rewrite needs a completeness check. The template is an evidence-collection framework, not a mandatory company form. Preserve the shortest submitted version that still carries the decisive evidence.
 
+For reports in the post-2026-09-17 theme regime, also read [theme-based-selection.md](theme-based-selection.md). Add a theme section only when supported by real facts; never manufacture a methodology to match the award.
+
 ## Two-stage method
 
 1. Build the complete fact sheet internally: object, scope, action, result, verification, value, status, and next node.
@@ -61,9 +63,21 @@ Choose the pattern that fits the evidence; do not force every item into the same
 
 A no-anomaly result is meaningful only when the checked scope and method are explicit.
 
+### Observable before/after behavior
+
+`原来【旧行为/限制】，现已【新行为/能力】；经【场景/范围】验证【可观察结果】，尚待【未测场景；没有则删除】。`
+
+Use this when large metrics are unavailable but a user, system, or process behavior changed visibly. `体验优化` is not enough; name what could not be done before and what now works.
+
 ### Partial progress
 
 `目标为【目标值】，目前完成【实际值/比例】；差距为【差额】，原因是【已确认原因】，预计【时间】完成下一节点。`
+
+### Methodology-theme evidence
+
+`基于【真实问题/重复场景】，形成【具体规则、SOP、模板、脚本、检查清单或原则】，经【数据/实操/测试/案例】验证，可复用于【对象或场景】。`
+
+If the method is still being formed, preserve that state: `已记录【原因/排查步骤】，待问题解决并验证后沉淀为【清单/SOP】。`
 
 ## Evidence checklist
 
@@ -93,7 +107,13 @@ Normally one item needs only the three to five fields that materially prove it. 
 - Group multiple defects or deliverables under one named project when they serve the same outcome. Item count alone does not create diffusion.
 - A tested fix may still say `待部署`; this honest state can remain competitive. Never upgrade it to `已上线`.
 - A scoped check with `暂无差异` is a verified result; an unscoped `检查无误` is weak.
+- A directly observed behavior change can be verification without a large metric when the old limitation, new behavior, and tested scenario are explicit.
+- An end-to-end workflow checked through actual operation can be verification when the report names the process and observed result; prefer this over a generic `核对无问题`.
 - One verified core can support several clearly bounded next-stage items. Not every item must close on the same day.
+- Several items can remain concise and competitive when they form one role-coherent value path, such as finance cash control plus invoicing and accounting accuracy. Group by value path and keep one dominant verified result.
+- A completed transfer is a landed transfer, not automatically a completed repayment. Preserve the exact node unless receipt, deduction, acceptance, or settlement is confirmed.
+- One fully closed sub-result may anchor another partially tested item, but every remaining test, deployment, approval, or submission state must stay visible.
+- Mention future strategic value only as support for a same-day delivered result; never use it in place of present evidence.
 - Reflection and next-day plans are optional. Remove them when they repeat the body or add no decision value.
 - Remove decorative modifiers such as `高效、积极、有序、全面推进` unless a supported comparison gives them meaning.
 - Keep the submitted report as short as the evidence permits. No exact character cap is confirmed.

@@ -21,6 +21,8 @@ Record one prospective row per date before the result is known:
 
 Never overwrite the pre-result prediction after observing the outcome. Store corrections as a new model version to prevent hindsight leakage.
 
+Apply the same prospective ledger discipline to weekly reports. Record the exact reporting cutoff and do not credit a prior week for payroll, signature, deployment, payment, reconciliation, or savings completed afterward. Later closure belongs to the next weekly row even when it completes the prior week's plan.
+
 Writing provenance prevents causal overclaiming. A skill-assisted winner validates that the submitted content matched that day's selection, but it does not prove the skill caused selection. An employee-authored winner is useful evidence that the same structural pattern occurs independently of the skill's wording. Never use authorship source as a favorable selection feature.
 
 When a prospective estimate is badly miscalibrated, append the unchanged prediction, outcome, and scoring loss to the ledger. Any feature-definition or coefficient change must receive a new model version and apply only to later reports. With only a few personal outcomes, prefer conservative shrinkage toward the quota prior over fitting coefficients to explain the latest case.
@@ -43,6 +45,8 @@ Use the user's daily selected/non-selected outcomes as the only directly observe
 
 Treat the result as user-specific. Do not generalize the user's finance/admin pattern to other roles or all employees.
 
+For weekly outcomes, compare at the project level before fitting features. Repeated daily completions inside one week are correlated and must not be treated as independent evidence. A finance portfolio with several unrelated deliverables is different from one central automation or control system reaching stable use.
+
 ### Same-day pairwise comparison
 
 On a day when the user is not selected, create three observed comparisons: each published winner outranks the user's report. Use these comparisons to learn relative rule match, such as whether the winners were shorter, more measurable, more closed, or more operationally verified.
@@ -57,6 +61,8 @@ Use prospective time-ordered updating. Recent evidence should matter more when a
 - evaluate on later dates rather than randomly splitting reports from the same period;
 - use gradual time decay or a state-space/random-walk coefficient model when enough data exists;
 - never state fixed 14-day or 30-day weights as company rules unless empirically selected and validated.
+
+For the rule reset effective 2026-09-17, start a new theme-regime ledger. Do not decay or blend legacy coefficients into it. Record the official theme, official winner reasons, and whether the theme is later confirmed to rotate. A theme change creates a new context within the regime; retain shared evidence about theme matching but calibrate theme-specific features separately.
 
 ## Calibration
 

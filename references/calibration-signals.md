@@ -162,6 +162,27 @@ Selected reports sometimes state that a direction remains unsettled, a chain sti
 
 Reward evidence that the report delivered a prior-week commitment and that next-week plans follow directly from current validation gaps, risks, or unfinished milestones. Generic plans such as `继续完善` are weak unless the object and acceptance condition are clear.
 
+## Confirmed weekly winner set and finance non-selection — 2026-09-08 to 2026-09-12
+
+The complete three-winner set contained growth automation, product delivery, and engineering automation reports. A finance report previously estimated at 47.74% by `provisional-bayes-v0.5` was not selected. Preserve that prospective estimate and record outcome `0`; its Brier loss is approximately 0.228. This is a confirmed weekly false positive and must change only future feature assignment.
+
+The winners supplied three project-level operating chains:
+
+- A content-and-advertising automation report connected multi-image generation, daily automatic publishing, expansion to nine cities, 16 approved acquisition posts, 1,013.86 yuan of daily spend, 100% recorded publishing success, 476 passed tests, response-time reduction of about half, and 0.9 GB of released storage.
+- A product report kept one 2.0 program as the weekly core, merged organization, performance, target, result, and discipline modules to mainline, restored QR-code payment for blocked stores, closed a set of production scope defects, and released two management and two mini-program versions.
+- An engineering report moved a Java voice service through real-device integration with 29 files, 2,603 lines, and 49 passing tests; fixed a 50-yuan mischarge root cause; launched automated advertising-spend collection so manual entry stopped; and delivered resource validation.
+
+The non-selected finance report contained several real accomplishments—published reimbursement rules, two cancellation-control processes published and tested, corrected business reports, tax reconciliation without differences, invoice-limit increases, and payroll funding preparation—but its central automation remained at MVP testing, payroll had not yet been paid, vendor pricing was not final, and loan details awaited review. The themes remained a portfolio of separate finance tasks rather than one operating weekly transformation.
+
+Calibration implications:
+
+- Score weekly evidence at project level. Do not sum strong daily items into strong `dominant_outcome` or `live_use` automatically.
+- `发布并测试`, `MVP完成`, `资金到位待发薪`, `报价下降但未定`, and `明细整理待复核` are useful milestones, but they are weaker than production use, actual payment, stopped manual work, live transactions, accepted delivery, or reconciled savings.
+- A winning weekly core often forms `one project → connected deliveries → real operation → verification → changed behavior`; multiple unrelated completed workstreams can still be diffuse.
+- Role normalization remains necessary. Finance does not need engineering metrics, but should expose actual cash movement, completed settlement, reconciled differences, realized cost reduction, adopted control coverage, or stable automation use.
+- Format is not causal: two winners omitted a separate reflection or next-week plan. Outcome density and operating evidence matter more.
+- Results completed on 2026-09-15—actual payroll and final 10,000-yuan vendor reduction—belong to the following week and must not be backfilled into the 2026-09-08 to 2026-09-12 report.
+
 ## Confirmed daily winner set — 2026-09-09
 
 Three confirmed winners from the same daily pool supplied a cross-role comparison.
@@ -212,7 +233,7 @@ Calibration implications:
 
 ## Confirmed daily winner additions — 2026-09-11
 
-The user supplied two confirmed winners from the same date. The full three-winner set and the other forty reports remain unobserved, so treat these as positive signals rather than a complete same-day decision boundary.
+The user supplied the complete three-winner set from the same date. The other forty reports remain unobserved, so this identifies the published winner profile for that day but not the full same-day decision boundary.
 
 ### Cross-entity payroll control and bounded next stages
 
@@ -237,6 +258,55 @@ Implications:
 - A separate reflection or next-day plan is not required when the body already supplies complete evidence and honest pending states.
 - Because this reporter is already a recurring winner, apply reporter-level shrinkage. The employee-authored provenance supports that the structural pattern exists independently of skill-generated phrasing, but it is not a fully independent company-wide confirmation.
 
+### Observable before/after behavior with mixed closure states
+
+One product/engineering winner changed a single ambiguous birthday field into separate Gregorian and lunar dates, with either entry back-calculating the other. The data fields and edit-page behavior were complete, while several write scenarios were explicitly left for continued testing. The same report also closed a quick-add modal defect across four similar scenarios: when many stores previously pushed the gender option outside the visible area, the revised modal could scroll to it.
+
+Implications:
+
+- Directly observable before/after behavior can be strong verification even without a test-count, revenue figure, or efficiency percentage. State the old limitation, new behavior, and verified scenario.
+- One fully closed and visibly verified result can anchor a report that also contains another partially tested item, provided both states are separated accurately.
+- Large metrics are not mandatory for product or process work when normal operation can be demonstrated; vague claims such as `体验已优化` remain weak without the behavior changed.
+- A future design insight or strategic extension may support the result, but only after the report proves a concrete same-day delivery. Do not score prospective value as realized impact.
+- The writing provenance for this report is unknown. Record it as unknown and do not infer whether the skill influenced selection.
+
 ### Cross-role common signal
 
-Across the HR/administration and product/engineering winners, the shared structure is `one dominant work object → explicit scope or root cause → verified result → precise next state`. This supports role-normalized evidence: payroll can prove value through controlled scope and no-difference review, while engineering can prove value through root cause and passing tests. Do not require identical metrics or vocabulary across roles.
+Across all three HR/administration and product/engineering winners, the shared structure is `one dominant work object → explicit scope or concrete problem → observable result → check/test proof → precise next state`. This supports role-normalized evidence: payroll can prove value through controlled scope and no-difference review; engineering can prove value through root cause and passing tests; product behavior can prove value through a verified before/after interaction. Do not require identical metrics, headings, reflections, plans, or vocabulary across roles.
+
+## Confirmed daily winner set and personal selection — 2026-09-16
+
+The complete three-winner set covered product delivery, finance operations, and engineering delivery. The user's finance report had a prospective `provisional-bayes-v0.6` estimate of 45.41% and was selected. Preserve that prediction and record outcome `1`; this supports the model direction but does not narrow confidence by itself.
+
+The winners showed three role-specific verification paths:
+
+- A product winner loaded two classes into production, merged duplicate stores for two enterprises with people, orders, classes, and history migrated, verified production recovery, merged historical-result snapshots and cross-period performance fixes to mainline, and recorded user confirmation for an interface change. A vague Sentry follow-up remained, but stronger verified outcomes anchored the report.
+- The finance winner confirmed accounting solutions and accurately marked them as started rather than solved; verified the full commission-invoicing process through actual operation; completed a 39,000-yuan transfer to a named bank account for loan principal and interest; and issued and sent a 10,000-yuan invoice.
+- An engineering winner ran a scheduled report chain in the test environment, reproduced and corrected an audio-timing collision with measured before/after timing, passed 63 tests, and prepared a fourth-version production checklist. It kept the font-image rebuild as pending verification.
+
+Calibration implications:
+
+- A daily report may contain several separate work objects without being diffuse when they form a role-coherent value path and one verified result anchors the day. Finance can combine accounting treatment, invoicing, and funds control without imitating one-project engineering language.
+- End-to-end actual-operation validation is strong role-specific evidence. `经实际操作确认全流程正常` is materially stronger than an unscoped desk check.
+- Amount + object + purpose + precise status can make a finance node auditable. A transfer for repayment is a completed transfer, not proof that bank deduction or final settlement occurred.
+- One strong verified core can coexist with a weaker follow-up item. Do not require every numbered item to have equal evidence strength.
+- The three winners varied substantially in length and item count. Preserve the confirmed brevity preference as a ban on avoidable wording, not a fixed character cap that removes decisive evidence.
+- Honest pending states remained compatible with selection: accounting treatment had started, a font-image rebuild awaited verification, and Sentry follow-up continued.
+
+## Confirmed rule reset and methodology-theme winners — 2026-09-17
+
+Leadership explicitly changed the selection approach and announced `本周评选主题：方法论沉淀奖`. This is a new rule regime, not an incremental recalibration of the 2026-09-16 model. The official announcement supplied the complete three-winner set and the reasons for each selection.
+
+- A growth/operations winner systematically analyzed acquisition-distribution states and new-account cold-start rules, fixed an old-reply deduplication block, and produced a one-click Bot deployment solution. The official reason emphasized distribution analysis, cold-start rules, and deployable reuse.
+- An engineering winner put work-order processing fully online, verified 20 historical samples and 189 local regression groups, and added approval-gap recovery, exception recovery, and duplicate-execution prevention. The official reason emphasized full-process automation and durable mechanisms.
+- A product winner reviewed a production scoring problem caused by development that ignored real frontline input. The extracted principle was to study real user-completion examples before developing similar tools. The official reason emphasized this product-development method even though several other report sections were terse or unfinished.
+
+Calibration implications:
+
+- Theme alignment is now a first-stage selection gate. General result strength remains useful but no longer identifies the winner set by itself.
+- The methodology must be explicit: a rule, diagnostic sequence, script, mechanism, checklist, template, or concrete principle derived from actual work.
+- Validation strengthens method claims but can take different forms: real-account review, historical samples, regression groups, live deployment, or a production failure and corrected development principle.
+- Reusability is central. The report should show how the method changes future work or can be applied to another account, task, or teammate.
+- Official selection reasons are supervised labels and outweigh speculative interpretation of wording, length, department, or item count.
+- A generic reflection is insufficient. `以后注意用户需求` is weaker than the specific rule `开发前先查看真实用户填写案例`.
+- The phrase `本周评选主题` suggests possible rotation, but one week cannot confirm a permanent cadence. Require the latest theme before future selection scoring.
