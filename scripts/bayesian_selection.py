@@ -28,6 +28,23 @@ FEATURE_PRIORS = {
     "duplicated_content": (-1.10, 0.35),
     "dominant_outcome": (0.85, 0.45),
     "thin_completion_evidence": (-0.90, 0.40),
+    "theme_alignment": (1.30, 0.55),
+    "reusable_method": (1.05, 0.50),
+    "method_validation": (0.90, 0.50),
+    "transferability": (0.70, 0.45),
+    "method_artifact": (0.75, 0.45),
+    "one_off_result_only": (-0.85, 0.45),
+    "unsupported_method_claim": (-1.00, 0.45),
+}
+
+THEME_FEATURES = {
+    "theme_alignment",
+    "reusable_method",
+    "method_validation",
+    "transferability",
+    "method_artifact",
+    "one_off_result_only",
+    "unsupported_method_claim",
 }
 
 EFFECT_SCALE = 0.65
@@ -73,10 +90,21 @@ def validate_features(raw: dict) -> dict[str, float]:
 def estimate(payload: dict, draws: int, seed: int) -> dict:
     submissions = int(payload.get("actual_submissions", 43))
     quota = int(payload.get("quota", 3))
+    report_type = str(payload.get("report_type", "daily")).lower()
+    rule_regime = str(payload.get("rule_regime", "legacy")).lower()
+    selection_theme = str(payload.get("selection_theme", "")).strip()
     if submissions <= quota or quota <= 0:
         raise ValueError("Require actual_submissions > quota > 0")
+    if report_type not in {"daily", "weekly"}:
+        raise ValueError("report_type must be 'daily' or 'weekly'")
+    if rule_regime not in {"legacy", "theme"}:
+        raise ValueError("rule_regime must be 'legacy' or 'theme'")
+    if rule_regime == "theme" and not selection_theme:
+        raise ValueError("selection_theme is required for the theme regime")
 
     features = validate_features(payload.get("features", {}))
+    if rule_regime == "legacy" and any(features[name] for name in THEME_FEATURES):
+        raise ValueError("theme features require rule_regime='theme'")
     base_probability = quota / submissions
     base_logit = math.log(base_probability / (1.0 - base_probability))
 
@@ -92,7 +120,14 @@ def estimate(payload: dict, draws: int, seed: int) -> dict:
 
     estimate_value = sum(probabilities) / len(probabilities)
     return {
-        "model_version": "provisional-bayes-v0.4",
+        "model_version": (
+            "provisional-theme-bayes-v1.0"
+            if rule_regime == "theme"
+            else "legacy-bayes-v0.7"
+        ),
+        "rule_regime": rule_regime,
+        "report_type": report_type,
+        "selection_theme": selection_theme or None,
         "probability_percent": round(estimate_value * 100, 2),
         "credible_interval_80_percent": [
             round(quantile(probabilities, 0.10) * 100, 2),
@@ -101,7 +136,7 @@ def estimate(payload: dict, draws: int, seed: int) -> dict:
         "base_rate_percent": round(base_probability * 100, 2),
         "actual_submissions": submissions,
         "quota": quota,
-        "confidence": "low",
+        "confidence": "very_low" if rule_regime == "theme" else "low",
         "effect_scale": EFFECT_SCALE,
         "features": features,
         "warning": (
