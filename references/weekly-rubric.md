@@ -11,6 +11,8 @@ Use this rubric to evaluate how well a weekly report communicates accumulated wo
 - 8–15: Several useful outputs exist, but the week's central accomplishment is diffuse or mostly intermediate.
 - 0–7: A chronological activity list with little accumulated result.
 
+Judge this dimension at the project or transformation level. Several completed daily tasks do not automatically form a weekly transformation. For the top band, prefer evidence that the central capability was actually used, paid, adopted, reconciled, accepted, or run in production during the reporting period. Publication, configuration, funding preparation, or MVP testing without operating evidence normally belongs in the 16–21 band even when useful.
+
 ### 2. Evidence and measurable change — 20
 
 - 17–20: Coherent before/after, cumulative scope, quality, finance, conversion, reliability, or acceptance evidence.
@@ -59,6 +61,8 @@ Apply conservatively and avoid double-counting:
 - −3 to −10: Development or proposal is described as launched, accepted, or effective without evidence.
 - −2 to −6: Major unfinished work is hidden rather than bounded with its next action.
 - −2 to −5: Training, meetings, or AI-tool usage is presented as the achievement without application or output.
+- −3 to −8: Independent daily completions are presented as one weekly core without a connected state transition or cumulative operating effect.
+- −3 to −8: A central item remains at `待接入/待执行/待复核/待签署`, but the summary describes the weekly transformation as already operating or closed.
 
 ## Interpretation
 

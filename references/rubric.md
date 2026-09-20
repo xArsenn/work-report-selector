@@ -20,6 +20,8 @@ Use this rubric only to evaluate how well a daily report is written and evidence
 
 Do not reward decorative numbers such as dates, list numbering, or counts that do not establish output or impact.
 
+An end-to-end process check performed through actual operation is auditable verification when the scope and observed result are explicit. A result such as `经实际操作确认开票信息及开票环节均正常` can support this dimension even without a large test count; an unscoped `核对无问题` cannot.
+
 Normally cap this dimension at 15 when the report supplies high volume but no quality, acceptance, conversion, outcome, or other evidence that the volume was useful. For production roles whose direct deliverable is content or units produced, verified completed output can itself be meaningful evidence; named formats, template reuse, supporting asset preparation, or workflow improvement can justify 16–20 even before downstream conversion is known. Do not extend this exception to unverified or unusable volume.
 
 ### 3. Business value — 20
@@ -60,6 +62,8 @@ Apply conservatively and never double-penalize the same weakness:
 - −2 to −8: The daily report is avoidably long relative to its substance, especially when it repeats a core summary, background, projected value, recap, or plan. Apply this because leadership has explicitly required shorter daily reports; do not invent a hard character threshold.
 
 Do not deduct merely for short length, imperfect formatting, missing a next-day plan, or missing a target when the report supplies a strong variance explanation and corrective action. Under the confirmed length constraint, shorter is preferable when substance is equal.
+
+Do not deduct for multiple daily items merely because they are separate projects. Judge whether they form a coherent role-level value path and whether one verified result anchors the day. Penalize diffusion only when the items are unrelated or none is distinctive.
 
 ## Interpretation
 

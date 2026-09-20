@@ -72,7 +72,7 @@ Example input:
 
 Run with `python scripts/bayesian_selection.py --input input.json`. Unspecified features default to zero. Feature assignments must be justified from the report and shown to the user when they materially affect the result.
 
-Two regimes are available. `legacy-bayes-v0.7` preserves the pre-2026-09-17 model for historical reports. `provisional-theme-bayes-v1.0` starts a new model after leadership's rule reset and adds theme-alignment features. It has very-low confidence because only one complete post-change winner set is available. Never blend a legacy posterior into the theme regime.
+Two regimes are available. `legacy-bayes-v0.7` preserves the pre-2026-09-17 model for historical reports. `provisional-theme-bayes-v1.0` starts a new model after leadership's rule reset and adds theme-alignment features. It has very-low confidence because only three complete post-change winner sets and no full non-winner pool are available. Never blend a legacy posterior into the theme regime.
 
 Assign evidence features conservatively:
 

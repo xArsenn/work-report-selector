@@ -79,6 +79,8 @@ Use this when large metrics are unavailable but a user, system, or process behav
 
 If the method is still being formed, preserve that state: `已记录【原因/排查步骤】，待问题解决并验证后沉淀为【清单/SOP】。`
 
+A completed method artifact may also be a positioning framework, standard display scheme, evaluation method, requirement-decomposition structure, or configuration-consistency rule. When implementation is pending, write both states: `已完成【框架/标准/规则】并经【会议/评审/分析】确认，后续按该方法推进【开发/配置/应用】。` Do not upgrade the later implementation to completion.
+
 ## Evidence checklist
 
 For each major item, retain the strongest available fields:

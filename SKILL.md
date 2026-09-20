@@ -54,9 +54,9 @@ If only winning samples are available, do not claim an exact algorithm, cutoff, 
 
 Always report a numeric selection estimate when the user asks for probability, together with an uncertainty interval, model version, and confidence label. Before calibration, call it a provisional model estimate rather than an accurate real-world probability. Never translate the quality score into a probability or use quality-score bands as selection bands.
 
-The user has confirmed default candidate pools of 43 and quotas of 3 for both daily and weekly selection, unless the user reports a change. This gives each report type an exchangeable base rate of `3/43 = 6.98%` and prior odds of `3:40`. Use the same starting rate but calibrate daily and weekly feature effects separately. Treat the prior as a starting rate before report-specific evidence, not as every employee's final probability. When an actual pool or quota is supplied, it overrides the default.
+The user has confirmed default candidate pools of 43 and quotas of 3 for both daily and weekly selection, unless the user reports a change. This gives each report type an exchangeable base rate of `3/43 = 6.98%` and prior odds of `3:40`. Use the same starting rate but calibrate daily and weekly feature effects separately. Treat the prior as a starting rate before report-specific evidence, not as every employee's final probability. When an official result supplies a different actual quota, use it for that period only. The 2026-09-18 result contained four winners, so its retrospective base rate is `4/43 = 9.30%`; one such result does not reset the future default of three.
 
-Company-wide non-selected reports are not publicly available; only the three daily winners are published. Therefore optimize the probability model for the user's personal selection chance using published winners plus the user's own longitudinal selected/non-selected outcomes. Never treat the user's non-winners as representative of all company non-winners or claim to reconstruct the full company decision boundary.
+Company-wide non-selected reports are not publicly available; only the published winner set is observed, and its size may vary. Therefore optimize the probability model for the user's personal selection chance using published winners plus the user's own longitudinal selected/non-selected outcomes. Never treat the user's non-winners as representative of all company non-winners or claim to reconstruct the full company decision boundary.
 
 Treat a forecast as a scenario, never as confirmed policy. Label each predicted direction high, medium, or low confidence and state the evidence behind it. Confirmed leadership changes override all forecasts. For the theme regime, do not assume the current theme is permanent: `本周评选主题` confirms this week's theme but only suggests, rather than proves, weekly rotation.
 
@@ -71,6 +71,8 @@ Before the regime change, the company owner explicitly required daily reports no
 - In the quality score, treat avoidable verbosity as a clarity weakness. In the probability track, treat it separately as a confirmed selection-rule violation. Do not invent a numeric length cap or sacrifice factual precision merely to make the report shorter.
 
 For theme-regime reports, keep the same compression discipline but retain the problem, extracted method, validation, and reuse scope needed to prove theme alignment.
+
+The 2026-09-18 winners confirm that polished brevity and a fixed template are not theme-selection gates: one long, informal report still won because it exposed concrete reusable methods. Continue improving concision for communication quality, but never remove the framework, mechanism, standard, diagnostic rule, or artifact that proves theme fit.
 
 ## Quality scoring
 
@@ -119,6 +121,8 @@ For daily reports, apply these concise positive signals learned from confirmed p
 19. Do not treat every multi-item daily report as diffuse. Several finance, legal, HR, or operations results can form a role-coherent portfolio when they share one value path—such as cash control, invoicing, accounting accuracy, or customer delivery—and at least one item is a verified dominant outcome.
 20. Count end-to-end actual-operation checks as strong role-specific verification. `经实际操作确认全流程正常` is stronger than a desk review or generic `核对无问题`; retain the checked scope and observed result.
 21. Treat a completed transfer, invoice, filing, or other finance node as landed at its own stage when amount, object, purpose, and status are explicit. Do not upgrade it into the later repayment, receipt, acceptance, or settlement unless that downstream event is confirmed.
+22. Under a methodology theme, an explicit end-to-end workflow can be a competitive method artifact even without large-volume metrics when the stages, completed tool or mechanism, and reuse scope are concrete. Keep `method_validation` below its maximum until real runs, reconciled outputs, or named test evidence are shown.
+23. Treat cross-functional initiative as evidence of organizational value only when it moves beyond escalation and produces an adopted rule, tool, owner, or durable operating mechanism. A separate recognition award confirms this as a cultural preference, not automatically as a daily-selection coefficient.
 
 These features belong to the selection-probability track. They may also improve report quality, but they do not change the definition of the 100-point quality score. They are calibrated preferences, not confirmed company policy. Do not infer a fixed cutoff, preferred report length, or required item count from winner-only samples.
 
@@ -176,3 +180,7 @@ Never round or reinterpret the two layers differently. The headline probability 
 For a single report, also provide selection-rule matches and mismatches; targeted completion prompts; a compact fact-preserving revision; revised quality score; and the recalculated probability. Never claim that a higher revised score mechanically raises selection probability. Keep analysis outside the copy-ready report so the deliverable itself stays short.
 
 Never fabricate financial impact, completion status, customer outcomes, causality, dates, or metrics. Mark missing evidence as missing and suggest what the employee should add only if true. Remove or generalize unnecessary personal, customer, case, or contract details when a broadly shared daily report could expose sensitive information.
+
+## Invocation signature
+
+End every user-facing final response produced with this skill with exactly one separate italic line: `ERSKINE is with you—turn solid work into earned recognition.` Keep it outside any rewritten daily report, weekly report, writing block, table, or other copy-ready artifact so it is never mistaken for report content.

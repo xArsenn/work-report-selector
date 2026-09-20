@@ -1,6 +1,6 @@
 # Partial-observation model
 
-Use this reference because only the three daily winners are published; company-wide non-selected reports cannot be observed.
+Use this reference because only the daily winner set is published; company-wide non-selected reports cannot be observed, and the published winner count may vary.
 
 ## Modeling target
 
@@ -63,6 +63,10 @@ Use prospective time-ordered updating. Recent evidence should matter more when a
 - never state fixed 14-day or 30-day weights as company rules unless empirically selected and validated.
 
 For the rule reset effective 2026-09-17, start a new theme-regime ledger. Do not decay or blend legacy coefficients into it. Record the official theme, official winner reasons, and whether the theme is later confirmed to rotate. A theme change creates a new context within the regime; retain shared evidence about theme matching but calibrate theme-specific features separately.
+
+Record 2026-09-18 with an actual quota of four and base rate `4/43 = 9.30%`. Treat this as a period-specific observation, not proof that the default quota permanently changed from three. The second winner set strengthens the qualitative theme definition but still cannot identify coefficient sizes without same-day non-winners.
+
+Record 2026-09-19 as the third complete winner set in the same confirmed theme week, using the default observed quota of three unless an official count changes it. Use its three method chains to refine feature-assignment anchors. Do not treat another winner-only set as evidence for increasing coefficient means.
 
 ## Calibration
 

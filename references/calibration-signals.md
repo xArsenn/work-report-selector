@@ -310,3 +310,42 @@ Calibration implications:
 - Official selection reasons are supervised labels and outweigh speculative interpretation of wording, length, department, or item count.
 - A generic reflection is insufficient. `以后注意用户需求` is weaker than the specific rule `开发前先查看真实用户填写案例`.
 - The phrase `本周评选主题` suggests possible rotation, but one week cannot confirm a permanent cadence. Require the latest theme before future selection scoring.
+
+## Confirmed methodology-theme winner set — 2026-09-18
+
+The official result again used `本周评选主题：方法论沉淀奖` and published four winners with explicit reasons. This is the second complete winner set under the theme regime. The actual winner count for this date was four, so retrospective probability uses `4/43 = 9.30%`; retain the user's default future quota of three until a broader change is confirmed.
+
+- A brand/strategy winner delivered three named positioning artifacts and obtained management feedback clarifying a reusable `主品牌 + 产品` two-line relationship. The method value was a strategic framework, not production deployment.
+- An engineering winner validated a work-order automation mechanism on one real approval, added 20 historical cases to the earlier 189 regression groups, and stated the reusable chain `AI识别意图 → 程序校验风险 → 真实工单验收`. The same report also validated a reusable sharing pattern through a completed presentation, 27 minutes of discussion, six product ideas, and explicit feedback.
+- A product/engineering winner used an MCP tool to decompose requirements to development-ready granularity and identified a systemic release risk: Deployment and Jenkins/Helm memory settings must remain consistent or releases overwrite the fix. The official reason rewarded both task decomposition and the reusable configuration rule despite the report's informal style, length, and unrelated pending items.
+- A product/agent-design winner mapped risks across 15 interfaces and 18 tools, proposed the standard result structure `简短结论 → 核心结果表 → 按需明细 → 折叠运行详情`, and documented a batch-evaluation method. The recommendations were not yet backend changes, but they were concrete, reusable design and evaluation artifacts.
+
+Calibration implications:
+
+- Theme alignment continues to dominate presentation polish. Length, heading consistency, and a single-core structure remain quality considerations but are not current theme gates.
+- A methodology artifact need not be deployed. A documented framework, standard proposal, evaluation method, or configuration rule can be selected when it is specific, grounded in real work, and reusable. Preserve implementation status honestly.
+- Named artifacts and explicit chains matter. `形成三份定位文件`, `AI识别→风险校验→真实验收`, `配置必须一致`, and `结论→结果表→明细→运行详情` expose the method itself rather than merely claiming reflection.
+- Validation remains additive, not uniform. It may be management confirmation, a real approval, regression cases, discussion feedback, production release verification, interface-risk analysis, or a structured review artifact.
+- A future intention is still weak. `后续形成配置清单` should not receive the same method-artifact strength as a checklist, framework, standard, or rule already completed today.
+- Do not raise theme coefficients from winner-only evidence. Update feature assignment and examples, while keeping probability confidence very low until non-winner comparisons or more personal outcomes are available.
+
+## Confirmed methodology-theme winner set — 2026-09-19
+
+The third complete winner set in the same confirmed theme week contained three selected reports. Unlike the prior day's official notice, the supplied excerpt did not repeat the theme label or selection reasons, so use the reports as labeled winner evidence under the already confirmed weekly theme rather than as a new rule announcement.
+
+- A controlled-development report aligned the existing settlement design, dual-end prototypes, and system state; executed and verified a first DDL batch covering eight new and six expanded tables; preserved the ownership of 14 historical commission and four invoice-pool records with zero erroneous transfers; and stated the implementation path `规则对齐 → 存量保护 → 分批开发 → 数据验收`. It also delivered two reconciliation SQL sets across 108,153 payment records and 3,762 recharge records and extracted the rule `先区分资金方向，再确定数据表及筛选口径`.
+- A migration report moved one capability across backend and frontend technology stacks while keeping the core logic unchanged and replacing only four adaptation classes and platform calls. Evidence included 84 passing unit tests, one natural test interview, a successful 206-character CRM write, zero merge conflicts after cleanup, and three environment diagnostic paths recorded in README. It exposed both `核心不动、只换适配层` and `旧版残留先清再合`.
+- A finance-automation report delivered a tool that automated login, invoice issuance, invoice aggregation, and batch email delivery through IMAP/SMTP, and separately restored the blocked automatic-login path by fixing verification-code retrieval. It named the reusable chain `自动登录 → 自动开票 → 发票汇总 → 邮件批量发送` and stated reuse for other repetitive invoicing scenarios. The report did not provide batch-run counts, so it supports strong method artifact and transferability but not maximum validation.
+
+Calibration implications:
+
+- A concise finance report can compete with metric-heavy engineering reports when it contains a completed artifact, an explicit end-to-end method, and a credible reuse scope.
+- Named stages make a mechanism auditable, but do not substitute for operating evidence. Separate tool completion from repeated production use when assigning `method_validation` and `live_use`.
+- The same theme supports role-normalized methods: controlled data migration, technical adaptation, reconciliation logic, and finance workflow automation can all qualify without sharing vocabulary.
+- Keep coefficient priors unchanged. This is winner-only evidence and improves coding anchors, not causal effect estimates.
+
+## Separate recognition signal — cross-functional mechanism building
+
+A company reward notice recognized an employee for identifying missing contract numbering, involving Legal despite departmental boundaries, proposing Legal-owned numbering, and helping create an AI colleague that institutionalized the process. Treat this as confirmed evidence that proactive cross-functional problem ownership and durable management mechanisms are culturally valued.
+
+Do not merge this reward directly into the excellent-report outcome ledger: it is a different recognition mechanism. For report evaluation, map the underlying evidence to existing features only when the report proves the transition `发现问题 → 跨部门推动 → 明确责任或规则 → 形成长期机制`. A handoff, meeting, or suggestion without adoption does not receive the same strength.
