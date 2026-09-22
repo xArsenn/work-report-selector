@@ -68,6 +68,8 @@ Record 2026-09-18 with an actual quota of four and base rate `4/43 = 9.30%`. Tre
 
 Record 2026-09-19 as the third complete winner set in the same confirmed theme week, using the default observed quota of three unless an official count changes it. Use its three method chains to refine feature-assignment anchors. Do not treat another winner-only set as evidence for increasing coefficient means.
 
+For 2026-09-20, preserve the previously stated 49.77% estimate for the user's proposed daily draft and the published three-winner list, which did not include the user. The exact submitted text has not been confirmed, so do not enter this as a verified prospective prediction/outcome pair for that submitted report or calculate a formal Brier score until submission provenance is confirmed. Even if confirmed, one miss is a calibration warning, not enough to identify a causal feature effect. Review possible double-counting among `theme_alignment`, `reusable_method`, `method_artifact`, and `transferability` when one generic coordination sequence supplied all four scores; do not silently change the prior estimate or coefficient means.
+
 ## Calibration
 
 Track Brier score, log loss, and calibration by probability band using only pre-result predictions. Because the data is personal and partially observed, also report the number of personal prediction days, personal wins, published winners observed, and current rule-version age.

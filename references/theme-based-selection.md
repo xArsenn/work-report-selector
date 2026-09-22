@@ -51,6 +51,8 @@ The 2026-09-18 set confirms four recurring method forms: a strategic framework, 
 
 The 2026-09-19 set adds three useful anchors: `规则对齐 → 存量保护 → 分批开发 → 数据验收` for controlled implementation; `核心不动、只换适配层` plus `旧版残留先清再合` for migration and conflict handling; and `自动登录 → 自动开票 → 发票汇总 → 邮件批量发送` for finance automation. Large metrics strengthen validation but are not mandatory when the artifact, stages, and reuse scope are explicit. Do not give maximum validation merely because a workflow is well named; distinguish tool completion from repeated real-operation proof.
 
+The 2026-09-20 published winners add a same-day comparison: completed and tested settlement/invoicing flows, a validated question-order gate and fallback rule, and measured messaging/follow-up/monitoring outputs. A finance draft from that date contained a confirmed system-integration plan, assigned developers, a drafted service agreement, and completed funding transfers, but integration development and validation were still future steps. Treat `明确问题 → 确定方案 → 落实责任人` as useful coordination, not by itself a task-specific operating method or proof that automated invoicing worked through the new integration. The published notice did not include official selection reasons; this separator is an inference, not a confirmed gate. Do not infer that every winning report needs large test counts: direct finance operation, reconciled output, stakeholder acceptance, or a documented decision rule can also validate a method.
+
 ### Role-normalized examples
 
 - **Finance:** unified tax or accounting definitions, reconciliation checklist, closing template, exception-routing rule, invoice-control SOP, or automation configuration guide.
