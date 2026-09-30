@@ -13,7 +13,7 @@ Determine the applicable regime before scoring selection:
 
 - **Legacy regime:** reports dated on or before 2026-09-16. Preserve `legacy-bayes-v0.7` and the historical rules below for audit and retrospective explanation.
 - **Theme regime:** reports dated on or after 2026-09-17. Leadership explicitly replaced the prior selection approach and announced a weekly award theme. Read [references/theme-based-selection.md](references/theme-based-selection.md).
-- **Unknown date or theme:** ask for the effective date or official theme when it materially affects selection. Do not silently apply legacy weights.
+- **Unknown date or theme:** do not silently apply legacy weights or present the last known theme as current. For daily-report output, still provide the required numeric selection estimate as an explicitly conditional scenario under the last confirmed theme (or a clearly labeled baseline-only scenario if no theme has ever been confirmed), and invite the user to provide the current official theme for recalculation. Never call that scenario the actual current-rule probability.
 
 Quality scoring remains usable across regimes. Selection scoring does not: never blend legacy winner evidence into the new theme model as though the decision rule were stable.
 
@@ -51,6 +51,8 @@ Always distinguish:
 - **Tentative signal:** plausible pattern with limited evidence.
 
 If only winning samples are available, do not claim an exact algorithm, cutoff, keyword list, or causal weight. State that the rubric predicts selection style but cannot identify the true decision boundary without non-winning examples.
+
+When the published winner text was rewritten or summarized by the administrator, separate three records: the employee's submitted report, the administrator-authored award summary, and the official selection reason. Use the official reason as the strongest label for why the report was selected, but never learn employee writing style, preferred length, or required headings from administrator-generated prose. If provenance is unclear, mark it unknown rather than assuming the published wording was submitted by the employee.
 
 Always report a numeric selection estimate when the user asks for probability, together with an uncertainty interval, model version, and confidence label. Before calibration, call it a provisional model estimate rather than an accurate real-world probability. Never translate the quality score into a probability or use quality-score bands as selection bands.
 
@@ -124,6 +126,10 @@ For daily reports, apply these concise positive signals learned from confirmed p
 22. Under a methodology theme, an explicit end-to-end workflow can be a competitive method artifact even without large-volume metrics when the stages, completed tool or mechanism, and reuse scope are concrete. Keep `method_validation` below its maximum until real runs, reconciled outputs, or named test evidence are shown.
 23. Treat cross-functional initiative as evidence of organizational value only when it moves beyond escalation and produces an adopted rule, tool, owner, or durable operating mechanism. A separate recognition award confirms this as a cultural preference, not automatically as a daily-selection coefficient.
 24. Under a methodology theme, distinguish a task-specific operating rule or verified mechanism from a generic project-management chain such as `发现问题 → 确定方案 → 落实责任人`. Do not let a polished `方法沉淀` paragraph turn an unimplemented integration plan into a validated or live method. When comparing same-day candidates, give full credit to finance-specific delivery and verification without requiring engineering-style test counts.
+25. Under an `超预期交付奖` theme, test the factual delta `expected or ordinary scope → extra action → landed result → verification or avoided loss`. Prefer an explicit original target when it is known, but accept an administrator-confirmed departure from normal role scope when the official reason identifies it. Never shrink the original target after the fact or add the phrase `超预期` as a substitute for evidence.
+26. Count scope expansion, an unblocked company-wide bottleneck, an adjacent system or tool delivered beyond the core assignment, a systemic root-cause fix beyond the reported symptom, or a complete alternative solution beyond passive advice as theme-relevant only after the additional work reaches a concrete result. Future modules, plans, and untested integrations remain pending.
+27. Real transactions, real-user scenarios, same-day launch, accepted deliverables, avoided rework, restored operation, or a completed handling plan can validate extra delivery. The monetary amount may support authenticity without being decisive; do not favor large amounts when the administrator's reason emphasizes scope, initiative, or verified behavior instead.
+28. Administrator award summaries often omit routine supporting items and compress the winner to one decisive theme-aligned result. Treat that omission as evidence about selection focus, not as a required employee-report length or template.
 
 These features belong to the selection-probability track. They may also improve report quality, but they do not change the definition of the 100-point quality score. They are calibrated preferences, not confirmed company policy. Do not infer a fixed cutoff, preferred report length, or required item count from winner-only samples.
 
@@ -168,6 +174,8 @@ For multiple reports:
 5. If the model is not calibrated, still provide its numeric estimate but label confidence low and keep the credible interval visible.
 
 ## Output contract
+
+Whenever the response includes a user-facing daily-report draft, rewrite, or evaluation, include both a 100-point quality score and a numeric selection-probability estimate, even if the user did not separately request them. Score the copy-ready version using only confirmed facts; when useful, also show the original score. Calculate probability with `scripts/bayesian_selection.py`, not by converting the quality score. If the current theme is unknown, label the number **conditional scenario under the last confirmed theme**, state that the current-rule probability is unknown, retain the 43/3 base rate and very-low confidence, and request the official theme only as an optional recalibration input. Keep the score and probability outside the copy-ready report.
 
 Lead with the decision. For ranking, provide a compact table with: employee, quality score, selection probability or band, strongest quality evidence, decisive selection factor, and recommendation. Make clear which ordering is being shown.
 

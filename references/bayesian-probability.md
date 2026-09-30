@@ -72,7 +72,7 @@ Example input:
 
 Run with `python scripts/bayesian_selection.py --input input.json`. Unspecified features default to zero. Feature assignments must be justified from the report and shown to the user when they materially affect the result.
 
-Two regimes are available. `legacy-bayes-v0.7` preserves the pre-2026-09-17 model for historical reports. `provisional-theme-bayes-v1.0` starts a new model after leadership's rule reset and adds theme-alignment features. It has very-low confidence because only three complete post-change winner sets and no full non-winner pool are available. Never blend a legacy posterior into the theme regime.
+Two regimes are available. `legacy-bayes-v0.7` preserves the pre-2026-09-17 model for historical reports. `provisional-theme-bayes-v1.0` starts a new model after leadership's rule reset and adds theme-alignment features. It has very-low confidence because multiple winner sets and administrator reasons are available but the full non-winner pools are not. Never blend a legacy posterior into the theme regime.
 
 Assign evidence features conservatively:
 
@@ -98,7 +98,9 @@ For weekly reports, apply these additional assignment rules:
 - Assign `pending_share` by the importance of unfinished nodes, not by item count. If the central automation, payment, contract, or reconciliation is pending, its weight is large.
 - Never use results completed after the weekly cutoff to raise prior-week features. Preserve the original prediction and record the later result in the next reporting period.
 
-For theme-regime reports, read [theme-based-selection.md](theme-based-selection.md), set `rule_regime` to `theme`, and provide the official `selection_theme`. Theme features measure rule match; ordinary result features remain supporting evidence. A missing current theme prevents a confident selection estimate.
+For theme-regime reports, read [theme-based-selection.md](theme-based-selection.md), set `rule_regime` to `theme`, and provide the official `selection_theme` when known. Theme features measure rule match; ordinary result features remain supporting evidence. For a daily-report output when the current official theme is missing, run an explicitly conditional scenario using the last confirmed theme as `selection_theme`, but do not present that result as the current-rule probability. If no theme has ever been confirmed, use a clearly labeled quota-baseline-only scenario. State the assumption, very-low confidence, and that a new theme could materially change the estimate. Never silently reuse legacy weights or treat a scenario as calibrated fact.
+
+For `超预期交付奖`, assign `theme_alignment` from the supported delta between expected or ordinary scope and the extra landed result. Use `verified_operation`, `live_use`, `closed_loop`, and `dominant_outcome` for the proof of delivery. Do not also activate methodology-only features unless a reusable method is independently present. Administrator-confirmed departure from normal scope can support theme alignment, but administrator-authored prose must not be treated as the employee's original wording.
 
 ## Preferred calibrated model
 
@@ -125,7 +127,7 @@ If company-wide non-winners cannot be obtained, use [partial-observation-model.m
 
 ## Output rules
 
-- Always output the model's numeric point estimate when probability is requested.
+- Always output the model's numeric point estimate when probability is requested or when the response includes a daily-report draft, rewrite, or evaluation.
 - Also report its 80% credible interval, base rate, actual-submission assumption, confidence, and strongest positive and negative factors.
 - For legacy reports, label the number `legacy-bayes-v0.7 / low confidence`. For post-change reports, label it `provisional-theme-bayes-v1.0 / very-low confidence`. “Accurate” means reproducible under stated inputs, not guaranteed to equal the administrator's unknown decision probability.
 - Once an empirical model is fitted, report its posterior mean and credible interval and replace the provisional coefficient priors.

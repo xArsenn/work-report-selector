@@ -25,6 +25,8 @@ Apply the same prospective ledger discipline to weekly reports. Record the exact
 
 Writing provenance prevents causal overclaiming. A skill-assisted winner validates that the submitted content matched that day's selection, but it does not prove the skill caused selection. An employee-authored winner is useful evidence that the same structural pattern occurs independently of the skill's wording. Never use authorship source as a favorable selection feature.
 
+When the administrator rewrites selected work before publication, store the submitted report, administrator summary, and official selection reason as separate fields. The official reason is a high-value selection label; the rewritten summary is not evidence of the employee's wording, character count, headings, or writing skill. If the submitted version is missing, do not backfill it from the administrator summary.
+
 When a prospective estimate is badly miscalibrated, append the unchanged prediction, outcome, and scoring loss to the ledger. Any feature-definition or coefficient change must receive a new model version and apply only to later reports. With only a few personal outcomes, prefer conservative shrinkage toward the quota prior over fitting coefficients to explain the latest case.
 
 ## Three complementary components
@@ -69,6 +71,10 @@ Record 2026-09-18 with an actual quota of four and base rate `4/43 = 9.30%`. Tre
 Record 2026-09-19 as the third complete winner set in the same confirmed theme week, using the default observed quota of three unless an official count changes it. Use its three method chains to refine feature-assignment anchors. Do not treat another winner-only set as evidence for increasing coefficient means.
 
 For 2026-09-20, preserve the previously stated 49.77% estimate for the user's proposed daily draft and the published three-winner list, which did not include the user. The exact submitted text has not been confirmed, so do not enter this as a verified prospective prediction/outcome pair for that submitted report or calculate a formal Brier score until submission provenance is confirmed. Even if confirmed, one miss is a calibration warning, not enough to identify a causal feature effect. Review possible double-counting among `theme_alignment`, `reusable_method`, `method_artifact`, and `transferability` when one generic coordination sequence supplied all four scores; do not silently change the prior estimate or coefficient means.
+
+For 2026-09-24, preserve the pre-result `74.76%` point estimate and `57.13%–89.36%` 80% interval under `超预期交付奖`; record the user's outcome as selected `1`. The official reason identified the exact scope delta: the original target was only bug repair, while the delivered result was AI reimbursement 1.0 end to end with four real reimbursement tests passing. The report was skill-assisted, which does not establish that the wording caused selection.
+
+For 2026-09-29, preserve the pre-result conditional `54.76%` point estimate and `36.58%–72.55%` interval. The later official notice confirmed that the assumed theme was in fact `超预期交付奖`, and the user's outcome was selected `1`. The administrator reason emphasized payment and automatic accounting-material delivery, real reimbursement testing, and a completed historical-invoice handling plan; it did not rely on the 900-yuan amount or a routine bank-password task. Do not retroactively change the feature inputs or probability after observing selection.
 
 ## Calibration
 

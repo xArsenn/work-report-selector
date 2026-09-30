@@ -6,7 +6,7 @@ Use this reference for reports dated on or after 2026-09-17 or whenever leadersh
 
 Leadership completely changed the selection rule effective with the 2026-09-17 winner set. The official announcements for 2026-09-17 and 2026-09-18 both named `方法论沉淀奖` and supplied explicit winner reasons. The 2026-09-19 winner set continued within the same confirmed theme week and selected three reports that exposed concrete reusable methods. Freeze all earlier selection rules and probabilities as legacy evidence; do not use them as the current decision boundary.
 
-`本周评选主题` confirms the theme for that week. It suggests that themes may rotate, but rotation is not yet confirmed. Always prefer the latest official theme. If the current theme is unavailable, ask for it and avoid a confident probability estimate.
+`本周评选主题` confirms the theme for that week. The change from `方法论沉淀奖` to `超预期交付奖` confirms that themes can rotate. Always prefer the latest official theme. If the current theme is unavailable, use only the explicitly conditional probability handling defined in the main skill and never present the prior week's theme as current.
 
 ## Selection order
 
@@ -20,7 +20,7 @@ Apply the new regime in this order:
 
 A strong operational result can fail the theme gate. A polished reflection can also fail when it merely renames ordinary work as a methodology without a real rule, artifact, mechanism, or validated learning.
 
-## Current confirmed theme: 方法论沉淀奖
+## Historical confirmed theme: 方法论沉淀奖
 
 The strongest chain is:
 
@@ -53,6 +53,41 @@ The 2026-09-19 set adds three useful anchors: `规则对齐 → 存量保护 →
 
 The 2026-09-20 published winners add a same-day comparison: completed and tested settlement/invoicing flows, a validated question-order gate and fallback rule, and measured messaging/follow-up/monitoring outputs. A finance draft from that date contained a confirmed system-integration plan, assigned developers, a drafted service agreement, and completed funding transfers, but integration development and validation were still future steps. Treat `明确问题 → 确定方案 → 落实责任人` as useful coordination, not by itself a task-specific operating method or proof that automated invoicing worked through the new integration. The published notice did not include official selection reasons; this separator is an inference, not a confirmed gate. Do not infer that every winning report needs large test counts: direct finance operation, reconciled output, stakeholder acceptance, or a documented decision rule can also validate a method.
 
+## Latest confirmed theme: 超预期交付奖
+
+Official notices dated 2026-09-22, 2026-09-24, and 2026-09-29 named `超预期交付奖——奖励超出预期、主动破局的人`. This is a confirmed theme change, not a continuation of methodology scoring.
+
+The strongest chain is:
+
+`expected or ordinary scope → voluntarily expanded action → landed extra result → real verification, avoided loss, or changed operating behavior`
+
+Positive evidence includes:
+
+- completing the assigned work and also delivering an adjacent capability, tool, service, or cross-functional solution;
+- removing a company-wide blocker or solving a systemic cause beyond the reported symptom;
+- moving from execution to a new operating approach that receives stakeholder confirmation;
+- finishing a full workflow, same-day launch, or accepted delivery beyond the original target;
+- validating the extra delivery with real transactions, real-user scenarios, production behavior, or an avoided review/rework cycle;
+- completing more than one extra result when the official reason confirms that the combined scope exceeded ordinary delivery.
+
+Weak or invalid evidence includes:
+
+- calling routine throughput, ordinary job volume, or an unfinished plan `超预期`;
+- lowering the stated original target after delivery merely to manufacture a larger delta;
+- describing future modules or strategic potential as though they were delivered today;
+- adding `主动破局` language without naming the extra action and its observed result;
+- treating AI terminology, a large monetary amount, or long task lists as causal by themselves.
+
+An explicit original target is the cleanest comparator, as in `原计划仅修Bug，实际完成全流程上线`. It is not universally mandatory: an official administrator reason may instead establish that work exceeded the normal role or delivery boundary. In either case, score the underlying facts, not the employee's self-label.
+
+### Confirmed winner anchors
+
+- **2026-09-22:** operations completed store-demand work and additionally restored AI real-time distribution and closed influencer settlement; product delivery closed three development lines and added voice entry beyond normal delivery; sales moved from manual outreach to an AI bulk-call approach recognized by the responsible leader.
+- **2026-09-24:** a product report removed a company-wide iOS release blocker and fixed several online problems; Legal completed all same-day contracts and went beyond passive consultation with Civil Code analysis plus an alternative solution; the finance user started from a bug-fix target but delivered AI reimbursement 1.0 end to end and passed four real reimbursement tests.
+- **2026-09-29:** product delivery finished its planned release and additionally migrated all tasks plus built an automatic-assignment service; growth work delivered an extra message-query tool and proactively resolved storage risk; the finance user added payment and automatic accounting-material delivery, passed real reimbursement tests, and formed a handling plan for historical invoice differences.
+
+The administrator authored the award summaries and reasons. Treat those reasons as supervised labels, not as examples of employee-preferred wording or length. The published report body may be original, reformatted, or selectively shortened; record its provenance separately when known.
+
 ### Role-normalized examples
 
 - **Finance:** unified tax or accounting definitions, reconciliation checklist, closing template, exception-routing rule, invoice-control SOP, or automation configuration guide.
@@ -84,4 +119,6 @@ Use `rule_regime: "theme"` and supply `selection_theme` to `scripts/bayesian_sel
 - `one_off_result_only`: strong result with little theme-relevant learning;
 - `unsupported_method_claim`: methodology language without supporting content.
 
-The post-change model is provisional and has very-low confidence because only three complete winner sets and no full non-winner pool have been observed. Keep the quota prior visible, use the actual four-winner quota for 2026-09-18 only, and never carry a legacy posterior into the new regime.
+For the `超预期交付奖` theme, use `theme_alignment` for the demonstrated scope delta and rely on ordinary result features for landing, verification, live use, closure, and pending state. Leave methodology-only features at zero unless the report independently contains a reusable method; do not reuse methodology coefficients merely because both themes reward initiative.
+
+The post-change model remains provisional and has very-low confidence because published winners and administrator reasons are available without the full non-winner pool. Keep the quota prior visible, use the actual four-winner quota for 2026-09-18 only, preserve every pre-result forecast, and never carry a legacy posterior into the theme regime.

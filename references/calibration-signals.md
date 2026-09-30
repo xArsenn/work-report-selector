@@ -360,3 +360,27 @@ The user supplied three published winners from the last workday of the confirmed
 - The user's draft reported an agreed integration plan with named developers, a service agreement drafted, and 30,000 yuan moved across three entities. These are real milestones, but the headline integration remained before development, live use, and acceptance. Its `明确问题 → 确定系统方案 → 落实开发责任` line described generic coordination more than a reusable, task-specific invoicing rule.
 
 Prospective lessons: compare the central result's actual state and proof against same-day winners, not the number of headings or the mere presence of a `方法沉淀` paragraph. Do not double-count one generic process line as strong theme alignment, reusable method, artifact, and transferability. A finance method need not imitate engineering tests: a verified invoice run, reconciled amount, exception-routing rule, or stakeholder acceptance can supply role-appropriate proof. This one comparison suggests the provisional theme model may be over-optimistic for plans with named owners but pending implementation; without the final submitted text and full non-winner pool, it does not establish a new hard selection rule or justify changing coefficients.
+
+## Confirmed theme rotation and administrator-authored summaries — 2026-09-22 onward
+
+Official notices changed the theme from `方法论沉淀奖` to `超预期交付奖——奖励超出预期、主动破局的人`, confirming that weekly themes rotate. The administrator now publishes a compressed work summary and an explicit reason after selection. Keep the employee submission, administrator summary, and official reason separate: learn selection causality from the reason, but do not infer employee writing style, length, or required headings from administrator prose.
+
+Across the 2026-09-22, 2026-09-24, and 2026-09-29 winner sets, three recurring extra-delivery forms appeared:
+
+1. **Scope expansion:** finish the assigned delivery and add an adjacent capability, migration, automation service, or alternative solution.
+2. **Active unblocking:** remove a company-wide bottleneck, systemic defect, or operational risk beyond the immediate symptom.
+3. **Execution-to-breakthrough:** turn ordinary execution into a new approach, tool, or workflow with stakeholder or real-scenario validation.
+
+The shared proof pattern is `baseline or ordinary boundary → extra action → landed outcome → real validation or avoided loss`. An explicit original target is helpful but not mandatory when the administrator reason confirms departure from normal scope. Do not reward self-declared `超预期` without the delta.
+
+## Confirmed personal selections — 2026-09-24 and 2026-09-29
+
+- On 2026-09-24, the user's skill-assisted finance report had a prospective `74.76%` estimate with a `57.13%–89.36%` interval and was selected. The official reason was: original target limited to bug repair, actual delivery of AI reimbursement 1.0 end to end, and four real reimbursements tested successfully.
+- On 2026-09-29, the user's report had a prospective conditional `54.76%` estimate with a `36.58%–72.55%` interval. The official notice later confirmed the assumed `超预期交付奖` theme and selected the user. The reason emphasized new payment and automatic accounting-material delivery, real reimbursement testing, and a historical-invoice handling plan.
+
+Calibration implications:
+
+- Preserve both forecasts unchanged and record outcome `1`; two positive outcomes support the direction of scope-delta and real-validation features but do not justify increasing coefficient means without same-day non-winners.
+- Real transactions and live workflow behavior were decisive finance evidence. The transaction amount supported authenticity but was absent from the administrator's reason, so do not treat amount size as causal.
+- Routine unrelated completions may be omitted from the administrator summary. This indicates thematic focus, not a universal short-report requirement.
+- Multiple extra results can win when the official reason finds that their combined scope exceeded ordinary delivery, but long unstructured task lists remain weak.
