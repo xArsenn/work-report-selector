@@ -76,6 +76,8 @@ For 2026-09-24, preserve the pre-result `74.76%` point estimate and `57.13%–89
 
 For 2026-09-29, preserve the pre-result conditional `54.76%` point estimate and `36.58%–72.55%` interval. The later official notice confirmed that the assumed theme was in fact `超预期交付奖`, and the user's outcome was selected `1`. The administrator reason emphasized payment and automatic accounting-material delivery, real reimbursement testing, and a completed historical-invoice handling plan; it did not rely on the 900-yuan amount or a routine bank-password task. Do not retroactively change the feature inputs or probability after observing selection.
 
+For 2026-09-30, preserve the pre-result `40.01%` point estimate and `25.58%–55.33%` interval. That forecast used the previously confirmed `超预期交付奖` theme because the new theme was not yet known. The official notice later revealed `攻坚克难奖` and selected the user (`1`). The official reason emphasized restructuring three complex payment scenarios, document recognition, payee reuse, function-level permissions, and one real payment test entering approval. Record the result as a prospective personal win, but do not treat it as a correctly themed calibration point or retroactively recompute the forecast. The report was skill-assisted; this validates factual theme match, not wording causality.
+
 ## Calibration
 
 Track Brier score, log loss, and calibration by probability band using only pre-result predictions. Because the data is personal and partially observed, also report the number of personal prediction days, personal wins, published winners observed, and current rule-version age.

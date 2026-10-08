@@ -53,7 +53,7 @@ The 2026-09-19 set adds three useful anchors: `规则对齐 → 存量保护 →
 
 The 2026-09-20 published winners add a same-day comparison: completed and tested settlement/invoicing flows, a validated question-order gate and fallback rule, and measured messaging/follow-up/monitoring outputs. A finance draft from that date contained a confirmed system-integration plan, assigned developers, a drafted service agreement, and completed funding transfers, but integration development and validation were still future steps. Treat `明确问题 → 确定方案 → 落实责任人` as useful coordination, not by itself a task-specific operating method or proof that automated invoicing worked through the new integration. The published notice did not include official selection reasons; this separator is an inference, not a confirmed gate. Do not infer that every winning report needs large test counts: direct finance operation, reconciled output, stakeholder acceptance, or a documented decision rule can also validate a method.
 
-## Latest confirmed theme: 超预期交付奖
+## Historical confirmed theme: 超预期交付奖
 
 Official notices dated 2026-09-22, 2026-09-24, and 2026-09-29 named `超预期交付奖——奖励超出预期、主动破局的人`. This is a confirmed theme change, not a continuation of methodology scoring.
 
@@ -96,6 +96,37 @@ The administrator authored the award summaries and reasons. Treat those reasons 
 - **Growth/operations:** cold-start rule, channel decision logic, distribution diagnosis, experiment protocol, or repeatable acquisition workflow.
 - **Legal:** clause standard, review checklist, case-response playbook, or risk-triage rule.
 
+## Latest confirmed historical theme: 攻坚克难奖
+
+The official winner notice for the reporting week containing 2026-09-30 named `攻坚克难奖`. Treat this as confirmed for that historical week only. Do not assume it remains the current theme in a later week without a new announcement.
+
+The strongest chain is:
+
+`material difficulty or constraint → substantive solution or redesign → concrete deliverable → real verification or decision-ready path`
+
+Positive evidence includes:
+
+- exposing why the work was genuinely difficult: multiple business branches, inconsistent rules, many accounts or systems, legacy constraints, cross-system dependencies, or a rebuild boundary;
+- replacing patchwork handling with a coherent workflow, automation, architecture, permission model, or implementation plan;
+- producing a concrete deliverable such as a working module, automated tool, tested process, architecture package, database design, or staged migration plan;
+- verifying executable work with a real transaction, end-to-end run, successful approval, download, reconciliation, or other observed behavior;
+- preserving remaining bugs or rollout work precisely after the central obstacle has been overcome.
+
+Weak or invalid evidence includes:
+
+- relabeling routine workload, ordinary throughput, or a long task list as `攻坚`;
+- describing a blocker without a delivered response or decision-ready solution;
+- using technical or AI vocabulary without explaining the constraint, solution, and result;
+- claiming full completion when only a proposal, partial configuration, or isolated test exists.
+
+### Confirmed winner anchors — 2026-09-30
+
+- **Finance workflow:** the user restructured payment applications around three distinct invoice scenarios, added document recognition, payee reuse, and function-level permissions, and validated one real payment application entering approval. The official reason emphasized the complex scenario redesign and real test, not generic finance activity.
+- **Bank-document automation:** a finance colleague configured 27 bank accounts and got China Merchants Bank through the complete automated login-and-download flow. Minor bugs remained and were disclosed; the solved core path plus bounded follow-up was sufficient.
+- **System architecture:** a product/technology colleague delivered the CRM-AI reconstruction plan, fulfillment front-end/back-end design, and database design, including principles, boundaries, coexistence strategy, and implementation order. This confirms that production deployment is not a universal gate when the difficult output is a complete decision-ready architecture package.
+
+Role-normalized interpretation matters. Compare the obstacle with what the employee could control and the durability of the response, not with another department's raw metric scale. A single real finance approval can be strong verification for a complex workflow, while an architecture deliverable requires enough design specificity to guide implementation.
+
 ## Fact-preserving rewrite pattern
 
 Use only when the source supports every link:
@@ -120,5 +151,7 @@ Use `rule_regime: "theme"` and supply `selection_theme` to `scripts/bayesian_sel
 - `unsupported_method_claim`: methodology language without supporting content.
 
 For the `超预期交付奖` theme, use `theme_alignment` for the demonstrated scope delta and rely on ordinary result features for landing, verification, live use, closure, and pending state. Leave methodology-only features at zero unless the report independently contains a reusable method; do not reuse methodology coefficients merely because both themes reward initiative.
+
+For `攻坚克难奖`, assign `theme_alignment` from the demonstrated difficulty-to-solution fit, not from self-described effort. Use `closed_loop`, `verified_operation`, `landed_outcome`, and `dominant_outcome` for executable work. For a decision-ready architecture or design package, `landed_outcome` may reflect the completed artifact while `live_use` remains low; do not fabricate deployment evidence. Use `pending_share` for material unresolved nodes, but do not let a disclosed minor bug erase a verified core breakthrough.
 
 The post-change model remains provisional and has very-low confidence because published winners and administrator reasons are available without the full non-winner pool. Keep the quota prior visible, use the actual four-winner quota for 2026-09-18 only, preserve every pre-result forecast, and never carry a legacy posterior into the theme regime.

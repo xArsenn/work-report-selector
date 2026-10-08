@@ -102,6 +102,8 @@ For theme-regime reports, read [theme-based-selection.md](theme-based-selection.
 
 For `超预期交付奖`, assign `theme_alignment` from the supported delta between expected or ordinary scope and the extra landed result. Use `verified_operation`, `live_use`, `closed_loop`, and `dominant_outcome` for the proof of delivery. Do not also activate methodology-only features unless a reusable method is independently present. Administrator-confirmed departure from normal scope can support theme alignment, but administrator-authored prose must not be treated as the employee's original wording.
 
+For `攻坚克难奖`, assign `theme_alignment` from evidence of a material constraint and a substantive solution that overcame it. Do not use task count, time spent, AI terminology, or technical vocabulary as difficulty proxies. For executable work, emphasize `closed_loop`, `verified_operation`, `landed_outcome`, and `dominant_outcome`. For a completed decision-ready architecture or design package, allow strong `landed_outcome` and moderate `closed_loop` while keeping `live_use` and `verified_operation` at the level actually shown. A verified core path with minor disclosed bugs may retain strong alignment with a bounded `pending_share`.
+
 ## Preferred calibrated model
 
 With enough labeled data, use hierarchical Bayesian logistic regression:

@@ -384,3 +384,17 @@ Calibration implications:
 - Real transactions and live workflow behavior were decisive finance evidence. The transaction amount supported authenticity but was absent from the administrator's reason, so do not treat amount size as causal.
 - Routine unrelated completions may be omitted from the administrator summary. This indicates thematic focus, not a universal short-report requirement.
 - Multiple extra results can win when the official reason finds that their combined scope exceeded ordinary delivery, but long unstructured task lists remain weak.
+
+## Confirmed attack-the-hard-problem theme — 2026-09-30
+
+The official notice for the reporting week containing 2026-09-30 changed the theme to `攻坚克难奖` and provided explicit reasons for three winners. This confirms another theme rotation. Use the reasons as selection labels; do not infer preferred employee wording or length from the administrator-authored summary.
+
+The three selected forms were:
+
+1. **Complex workflow redesign:** three distinct payment scenarios were unified into a payment-application module with document recognition, payee reuse, and function-level permissions; one real application successfully entered approval.
+2. **Scaled automation breakthrough:** 27 bank accounts were configured, with China Merchants Bank completing the full automated login-and-download path; minor bugs remained explicitly bounded.
+3. **Decision-ready architecture:** a CRM-AI reconstruction plan plus fulfillment front-end/back-end and database designs established principles, boundaries, coexistence strategy, and implementation order without claiming production deployment.
+
+The shared pattern is `genuine constraint → substantive response → concrete artifact or capability → role-appropriate proof`. Proof is not identical across roles: a real approval or end-to-end download supports executable work, while a complete architecture package can be a landed result when it is specific enough to direct implementation. Do not convert ordinary workload into difficulty, and do not require every winner to be fully deployed.
+
+The user's 2026-09-30 report had a prospective `40.01%` estimate with a `25.58%–55.33%` interval under the previously known `超预期交付奖` theme and was selected under the newly disclosed `攻坚克难奖`. Preserve the forecast unchanged. Treat the outcome as evidence that complex-scenario redesign plus real workflow verification is robust across themes, not as evidence that the old-theme probability was perfectly calibrated.
